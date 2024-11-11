@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.screen0 {
+    position: relative; /* Necesario para que los hijos con position: absolute se posicionen dentro */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(0, 19, 255);
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+}
+
+.logo {
+    width: 100%;
+    height: 8%;
+}
+
+.logoImg {
+    width: 10%;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg); /* Ajusta el filtro para cambiar el color */
+
+}
+
+.oval-background {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    transform: translate(-50%, 5%);
+}
+
+.tituloPrincipal {
+    width: 100%;
+    height: 32%;
+    font-size: 140%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+
+    .edito {
+        margin-bottom: -20px;
+        font-weight: 500;
+        font-size: 220%;
+    }
+
+    .todo {
+        margin: 0 0 -20px 0;
+        font-weight: 700;
+        font-size: 220%;
+    }
+
+    .tucontenido {
+        font-weight: 500;
+    }
+}
+
+.img-container {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+    z-index: 1; /* Asegura que la capa esté encima de la imagen */
+    mask-image: url('/Proyecto nuevo.png'); /* Ruta de tu imagen PNG */
+    mask-size: cover; /* Asegura que la máscara cubra todo */
+    mask-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+.btnComenzar {
+    border: none;
+    z-index: 3;
+    padding: 10px 30px;
+    font-size: 150%;
+    border-radius: 40px;
+    background-color: antiquewhite;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.screen1 {
+    z-index: 0;
+    color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    /*border: solid rgb(0, 255, 94) 10px;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 19, 255);
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+}
+
+.cards {
+    z-index: 1;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    color: blue;
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 20px;
+    width: 90%;
+    height: 40%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.image-container{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.reels{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    width: 70%;
+    height: auto;
+    object-fit: cover; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%; /* Ajusta este valor para desplazar la imagen hacia abajo */
+ 
+}
+
+h3{
+    margin: 20px 0 0 0;
+    z-index: 5;
+}
+
+.loquiero{
+    font-weight: 600;
+    background-color: blue;
+    color: antiquewhite;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 3; /* Asegura que esté sobre la imagen */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.screen2 {
+    width: 100vw;
+    height: 100vh;
+    border: solid rgb(72, 0, 255) 10px;
+}
