@@ -210,4 +210,76 @@ h3{
     width: 100vw;
     height: 100vh;
     border: solid rgb(72, 0, 255) 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+
+}
+
+.tresPasos {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.paso {
+    width: 100%;
+    height: 15%;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+}
+
+.paso h3{
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.listoPasos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+
+}
+
+.listoPasos h3{
+    margin: 0 auto;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+.numeroPaso {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgb(38, 38, 255);
+    color: aliceblue;
+    font-size: 200%;
+    font-weight: 600;
+}
+
+.accionPaso{
+    width: 75%;
+    display: flex;
+    justify-content: center;
 }
