@@ -14,7 +14,8 @@ body {
     height: 100vh;
     overflow: hidden;
     background: rgb(0, 19, 255);
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+    /*background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);*/
+    background-image: linear-gradient(to right bottom, #000819, #001638, #001e59, #0c2379, #362296, #3d2098, #431d9b, #4a1a9d, #301e87, #191d71, #061959, #001441);
 }
 
 .logo {
@@ -40,7 +41,7 @@ body {
     left: 50%;
     width: 600px;
     height: 600px;
-    background-color: antiquewhite;
+    background-color: rgb(15, 0, 58);
     border-radius: 50%;
     transform: translate(-50%, 5%);
 }
@@ -54,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
+    color: aliceblue;
 
     .edito {
         margin-bottom: -20px;
@@ -66,6 +67,8 @@ body {
         margin: 0 0 -20px 0;
         font-weight: 700;
         font-size: 220%;
+        filter: drop-shadow(0 0 2px rgba(255, 242, 0, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg); /* Ajusta el filtro para cambiar el color */
+
     }
 
     .tucontenido {
@@ -109,7 +112,7 @@ body {
     padding: 10px 30px;
     font-size: 150%;
     border-radius: 40px;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     color: rgb(34, 34, 34);
     position: absolute;
     top: 80%;
