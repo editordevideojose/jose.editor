@@ -307,13 +307,12 @@ h3{
         font-size: 104%;
     }
     p{
-        color: rgb(177, 177, 177);
+        color: #6c00ca;
     }
     img{
-        width: 25%;
-        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+        width: 20%;
         margin-bottom: 8px;
-
+        filter: drop-shadow(0 0 11px #c485fc);
     }
 }
 
