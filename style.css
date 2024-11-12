@@ -374,7 +374,7 @@ h3{
     margin: 5px;
     display: flex;
     width: 50%;
-    height: 22%;
+    height: 20%;
     background-color: rgb(0, 1, 56);
     border-radius: 10px;
     flex-direction: column;
@@ -388,6 +388,111 @@ h3{
         font-weight: 400;
         font-size: 80%;
         margin: 0 auto;
+    }
+}
+
+.screen4 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+    h2{
+        color: aliceblue;
+        margin-bottom: 40px;
+    }
+}
+
+.planes{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    #plan1{
+        background-color: blue;
+    }
+    #plan2{
+        background-color: rgb(24, 19, 87);
+    }
+    #plan3{
+        background-color: rgb(56, 56, 104);
+    }
+}
+
+.plan {
+    margin: 10px;
+    background-color: #6c00ca;
+    border: solid rgba(255, 255, 255, 0.2)  ;  
+    border-radius: 10px;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+    p{
+        font-weight: 400;
+        font-size: 60%;
+        margin: 0 auto;
+        color: aliceblue;
+    }
+    h3{
+        margin: -7px;
+        font-size: 120%;
+        color: aliceblue;
+    }
+    #x{
+        font-size: 180%;
+    }
+    button{
+        padding: 5px 40px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 10px;
+    }
+    .subtitulo{
+        font-weight: 700;
+        margin: 0;
+        font-size: 100%;
+        color: aliceblue;
+    }
+}
+
+.xCantidad {
+    width: 30%;
+    height: 100%;
+    border-right: solid 1px aliceblue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcionPlan{
+    width: 70%;
+}
+
+.otrosPlanes {
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 25px 0 0 0;
+    h3{
+        font-weight: 400;
+        margin: 0;
+        font-size: 80%;
     }
 }
 
