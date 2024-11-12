@@ -747,11 +747,41 @@ textarea.campo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h2{
+        color: aliceblue;
+    }
+}
+
+.puntaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+    h2{
+        font-size: 300%;
+        font-weight: 600;
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+
+    }
+    img{
+        width: 40%;
+        margin: 0;
+    }
+    h3{
+        font-weight: 500;
+        margin: 0;
+        font-size: 80%;
+        color: aliceblue;
+    }
 }
 
 .resenasContainer{
     width: 100%;
-    height: 50%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -771,8 +801,8 @@ textarea.campo {
 }
 
 .reseña {
-    flex: 0 0 80%; /* Cada reseña ocupa el 80% del contenedor */
-    margin: 0 10%; /* Separación entre tarjetas, 10% a ambos lados */
+    flex: 0 0 60%; /* Cada reseña ocupa ahora el 60% del contenedor */
+    margin: 20% 20%; /* Ajusta el margen para mantener la separación */
     box-sizing: border-box;
     text-align: center;
     background-color: #f0f0f0;
@@ -780,8 +810,7 @@ textarea.campo {
     font-size: 1.2em;
     color: #333;
     padding: 10px;
-    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
+    filter: drop-shadow(0 0 20px rgb(144, 0, 255));
 }
 
 .reseña:last-child {
@@ -844,6 +873,41 @@ textarea.campo {
 
     }
 }
+ /*CARRUSEL LOGOS*/
+ .carousel {
+    margin: 20px 0;
+    width: 100%;
+    height: 8%;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px 0; /* Opcional, para espacio alrededor del carrusel */
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 5s linear infinite;
+    /* Hacer que el contenedor sea lo suficientemente largo para el loop */
+}
+
+.carousel-track img {
+    height: 50px; /* Tamaño de los logos */
+    object-fit: contain;
+    flex-shrink: 0; /* Los logos no se comprimen */
+}
+
+/* Animación continua */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 
 
 
