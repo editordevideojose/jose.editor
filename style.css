@@ -407,7 +407,7 @@ h3{
 }
 
 .planes{
-    width: 60%;
+    width: 70%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -451,7 +451,11 @@ h3{
         color: aliceblue;
     }
     #x{
-        font-size: 180%;
+        font-size: 160%;
+    }
+    #m{
+        font-size: 100%;
+        padding-top: 3px;
     }
     button{
         padding: 5px 40px;
@@ -468,7 +472,7 @@ h3{
 }
 
 .xCantidad {
-    width: 30%;
+    width: 35%;
     height: 100%;
     border-right: solid 1px aliceblue;
     display: flex;
@@ -480,7 +484,7 @@ h3{
 }
 
 .descripcionPlan{
-    width: 70%;
+    width: 65%;
 }
 
 .otrosPlanes {
@@ -495,5 +499,84 @@ h3{
         font-size: 80%;
     }
 }
+
+.screen5 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+    h2{
+        color: aliceblue;
+        margin-bottom: 0 auto;
+    }
+}
+
+.form {
+    width: 75%;
+    padding: 20px;
+    background-color: #007bff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    color: aliceblue;
+    margin-top: 40px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea.campo {
+    height: 100px;
+    resize: vertical;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.checkbox-label {
+    font-size: 16px;
+}
+
+.boton {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #003f8a;
+}
+
+.formSubtitulo{
+    font-weight: 300;
+}
+
+
 
 
