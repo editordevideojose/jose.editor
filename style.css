@@ -8,8 +8,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/*PANTALLA 0: INICIO----------------------------------------------------------------*/
 .screen0 {
-    position: relative; /* Necesario para que los hijos con position: absolute se posicionen dentro */
+    position: relative;
+    /* Necesario para que los hijos con position: absolute se posicionen dentro */
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -30,7 +32,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg); /* Ajusta el filtro para cambiar el color */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
+    /* Ajusta el filtro para cambiar el color */
 
 }
 
@@ -67,7 +70,8 @@ body {
         margin: 0 0 -20px 0;
         font-weight: 700;
         font-size: 220%;
-        filter: drop-shadow(0 0 2px rgba(255, 242, 0, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg); /* Ajusta el filtro para cambiar el color */
+        filter: drop-shadow(0 0 2px rgba(255, 242, 0, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
+        /* Ajusta el filtro para cambiar el color */
 
     }
 
@@ -90,7 +94,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); 
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
 }
 
 .overlay {
@@ -99,11 +103,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
-    z-index: 1; /* Asegura que la capa esté encima de la imagen */
-    mask-image: url('/Proyecto nuevo.png'); /* Ruta de tu imagen PNG */
-    mask-size: cover; /* Asegura que la máscara cubra todo */
-    mask-repeat: no-repeat; /* Evita que se repita la imagen */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Capa negra semitransparente */
+    z-index: 1;
+    /* Asegura que la capa esté encima de la imagen */
+    mask-image: url('/Proyecto nuevo.png');
+    /* Ruta de tu imagen PNG */
+    mask-size: cover;
+    /* Asegura que la máscara cubra todo */
+    mask-repeat: no-repeat;
+    /* Evita que se repita la imagen */
 }
 
 .btnComenzar {
@@ -121,6 +130,7 @@ body {
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
 
+/*PANTALLA 1: CONTRATA----------------------------------------------------------------*/
 .screen1 {
     z-index: 0;
     color: aliceblue;
@@ -163,7 +173,7 @@ body {
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 }
 
-.image-container{
+.image-container {
     margin: 0;
     padding: 0;
     position: relative;
@@ -173,26 +183,27 @@ body {
     z-index: 1;
 }
 
-.reels{
+.reels {
     margin: 0;
     padding: 0;
     z-index: 1;
     width: 70%;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 5%; /* Ajusta este valor para desplazar la imagen hacia abajo */
- 
+    top: 5%;
+    /* Ajusta este valor para desplazar la imagen hacia abajo */
+
 }
 
-h3{
+h3 {
     margin: 20px 0 0 0;
     z-index: 5;
 }
 
-.loquiero{
+.loquiero {
     font-weight: 600;
     background-color: blue;
     color: antiquewhite;
@@ -202,10 +213,12 @@ h3{
     border-radius: 30px;
     position: absolute;
     bottom: 10%;
-    z-index: 3; /* Asegura que esté sobre la imagen */
+    z-index: 3;
+    /* Asegura que esté sobre la imagen */
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
+/*PANTALLA 2: MI SERVICIO----------------------------------------------------------------*/
 .screen2 {
     width: 100vw;
     height: 100vh;
@@ -218,7 +231,7 @@ h3{
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
 }
 
-.screen2 h2{
+.screen2 h2 {
     color: aliceblue;
 }
 
@@ -238,7 +251,8 @@ h3{
     height: 15%;
     margin: 20px;
     border-radius: 20px;
-    border: solid rgba(121, 0, 233, 0.791);;
+    border: solid rgba(121, 0, 233, 0.791);
+    ;
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
@@ -249,7 +263,7 @@ h3{
     box-sizing: border-box;
 }
 
-.paso h3{
+.paso h3 {
     margin: 0 auto;
     font-weight: 500;
     font-size: 90%;
@@ -269,7 +283,7 @@ h3{
     box-sizing: border-box;
 }
 
-.accionPaso{
+.accionPaso {
     width: 75%;
     margin-left: 10px;
 }
@@ -284,12 +298,13 @@ h3{
 
 }
 
-.listoPasos h3{
+.listoPasos h3 {
     margin: 0 auto;
     font-weight: 400;
     color: aliceblue;
 }
 
+/*PANTALLA 3: ELEGI TU TIPO----------------------------------------------------------------*/
 .screen3 {
     width: 100vw;
     height: 100vh;
@@ -299,17 +314,21 @@ h3{
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    h2{
+
+    h2 {
         color: aliceblue;
     }
-    h3{
+
+    h3 {
         margin: 0 auto;
         font-size: 104%;
     }
-    p{
+
+    p {
         color: #6c00ca;
     }
-    img{
+
+    img {
         width: 20%;
         margin-bottom: 8px;
         filter: drop-shadow(0 0 11px #c485fc);
@@ -346,7 +365,7 @@ h3{
     margin-inline: 5px;
 }
 
-.procesoCol{
+.procesoCol {
     margin: 5px;
     color: aliceblue;
     display: flex;
@@ -361,12 +380,12 @@ h3{
     text-align: center;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 
-    
-    p{
+
+    p {
         font-weight: 400;
         font-size: 70%;
         margin: 0 auto;
-    }  
+    }
 }
 
 .proceso {
@@ -384,13 +403,14 @@ h3{
     text-align: center;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 
-    p{
+    p {
         font-weight: 400;
         font-size: 80%;
         margin: 0 auto;
     }
 }
 
+/*PANTALLA 4: ELEGI TU TIPO----------------------------------------------------------------*/
 .screen4 {
     width: 100vw;
     height: 100vh;
@@ -400,13 +420,14 @@ h3{
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    h2{
+
+    h2 {
         color: aliceblue;
         margin-bottom: 40px;
     }
 }
 
-.planes{
+.planes {
     width: 70%;
     height: 60%;
     display: flex;
@@ -414,13 +435,16 @@ h3{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    #plan1{
+
+    #plan1 {
         background-color: blue;
     }
-    #plan2{
+
+    #plan2 {
         background-color: rgb(24, 19, 87);
     }
-    #plan3{
+
+    #plan3 {
         background-color: rgb(56, 56, 104);
     }
 }
@@ -428,7 +452,7 @@ h3{
 .plan {
     margin: 10px;
     background-color: #6c00ca;
-    border: solid rgba(255, 255, 255, 0.2)  ;  
+    border: solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     width: 100%;
     height: 25%;
@@ -439,31 +463,37 @@ h3{
     align-items: center;
     text-align: center;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-    p{
+
+    p {
         font-weight: 400;
         font-size: 60%;
         margin: 0 auto;
         color: aliceblue;
     }
-    h3{
+
+    h3 {
         margin: -7px;
         font-size: 120%;
         color: aliceblue;
     }
-    #x{
+
+    #x {
         font-size: 160%;
     }
-    #m{
+
+    #m {
         font-size: 100%;
         padding-top: 3px;
     }
-    button{
+
+    button {
         padding: 5px 40px;
         border-radius: 20px;
         border: none;
         margin-top: 10px;
     }
-    .subtitulo{
+
+    .subtitulo {
         font-weight: 700;
         margin: 0;
         font-size: 100%;
@@ -483,7 +513,7 @@ h3{
     align-items: center;
 }
 
-.descripcionPlan{
+.descripcionPlan {
     width: 65%;
 }
 
@@ -493,13 +523,15 @@ h3{
     text-align: center;
     flex-direction: column;
     margin: 25px 0 0 0;
-    h3{
+
+    h3 {
         font-weight: 400;
         margin: 0;
         font-size: 80%;
     }
 }
 
+/*PANTALLA 5: ELEGI TU TIPO----------------------------------------------------------------*/
 .screen5 {
     width: 100vw;
     height: 100vh;
@@ -509,7 +541,8 @@ h3{
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    h2{
+
+    h2 {
         color: aliceblue;
         margin-bottom: 0 auto;
     }
@@ -573,10 +606,11 @@ textarea.campo {
     background-color: #003f8a;
 }
 
-.formSubtitulo{
+.formSubtitulo {
     font-weight: 300;
 }
 
+/*PANTALLA 6: FAQS----------------------------------------------------------------*/
 .screen6 {
     width: 100vw;
     height: 100vh;
@@ -586,7 +620,8 @@ textarea.campo {
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    h2{
+
+    h2 {
         color: aliceblue;
         margin-bottom: 0 auto;
     }
@@ -657,3 +692,167 @@ textarea.campo {
     font-size: 80%;
 
 }
+
+/*PANTALLA 7: FINAL----------------------------------------------------------------*/
+.screen7 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+
+    h2 {
+        color: aliceblue;
+        margin-bottom: 0 auto;
+    }
+}
+
+.finalContainer {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 180%;
+        color: aliceblue;
+        margin: -2px;
+    }
+
+    button {
+        width: 80%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: #6c00ca;
+        color: aliceblue;
+        font-size: 110%;
+        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+    }
+}
+
+/*PANTALLA 8: RESENAS----------------------------------------------------------------*/
+/* Estilos generales para la pantalla */
+.screen8 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resenasContainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel-container {
+    width: 100%; /* Ancho del contenedor */
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición más rápida */
+}
+
+.reseña {
+    flex: 0 0 80%; /* Cada reseña ocupa el 80% del contenedor */
+    margin: 0 10%; /* Separación entre tarjetas, 10% a ambos lados */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+
+}
+
+.reseña:last-child {
+    margin-right: 0; /* Elimina el margen derecho de la última reseña */
+}
+
+.nombrePuntaje {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #818181;
+    h4{
+        font-weight: 400;
+
+    }
+    img{
+        width: 25%;
+        margin: 5px;
+    }
+}
+
+.grupoNombre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #818181;
+    h4{
+        font-size: 70%;
+        color: #818181;
+
+    }
+}
+
+.descripcion{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    h4{
+        font-size: 70%;
+        font-weight: 700;
+        margin: 10px;
+        color: #2b2b2b;
+    }
+}
+
+.fecha {
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h6{
+        font-weight: 400;
+        font-size: 50%;
+        color: #818181;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
