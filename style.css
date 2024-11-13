@@ -2,19 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 body {
-    height: 100vh;
-    overflow: hidden;
-    /* Oculta el overflow para que no se vea lo que está fuera de la pantalla */
-    scroll-snap-type: y mandatory;
-    /* Desplazamiento entre pantallas */
-    scroll-behavior: smooth;
-    /* Desplazamiento suave */
-    margin: 0;
-    /* Elimina cualquier margen predeterminado del body */
     min-height: 100vh;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
@@ -22,24 +12,6 @@ body {
 
 body {
     font-family: 'Poppins', sans-serif;
-}
-
-.screen0,
-.screen00,
-.screen1,
-.screen2,
-.screen3,
-.screen4,
-.screen5,
-.screen6,
-.screen7,
-.screen8 {
-    height: 100vh;
-    /* Ocupa toda la altura de la ventana */
-    width: 100%;
-    /* Asegura que el contenido ocupe toda la anchura de la ventana */
-    scroll-snap-align: start;
-    /* Alinea las pantallas con el inicio del contenedor */
 }
 
 /*PANTALLA 0: INICIO----------------------------------------------------------------*/
