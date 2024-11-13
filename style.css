@@ -4,21 +4,47 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+html {
+    height: 100%;
+    width: 100%;
+    viewport-fit: cover;
+  }
+
 body {
     height: 100vh;
-    overflow: hidden;  /* Oculta el overflow para que no se vea lo que está fuera de la pantalla */
-    scroll-snap-type: y mandatory;  /* Desplazamiento entre pantallas */
-    scroll-behavior: smooth;  /* Desplazamiento suave */
-    margin: 0;  /* Elimina cualquier margen predeterminado del body */
+    overflow: hidden;
+    /* Oculta el overflow para que no se vea lo que está fuera de la pantalla */
+    scroll-snap-type: y mandatory;
+    /* Desplazamiento entre pantallas */
+    scroll-behavior: smooth;
+    /* Desplazamiento suave */
+    margin: 0;
+    /* Elimina cualquier margen predeterminado del body */
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
 }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-.screen0, .screen00, .screen1, .screen2, .screen3, .screen4, .screen5, .screen6, .screen7, .screen8 {
-    height: 100vh;  /* Ocupa toda la altura de la ventana */
-    width: 100%;    /* Asegura que el contenido ocupe toda la anchura de la ventana */
-    scroll-snap-align: start;  /* Alinea las pantallas con el inicio del contenedor */
+.screen0,
+.screen00,
+.screen1,
+.screen2,
+.screen3,
+.screen4,
+.screen5,
+.screen6,
+.screen7,
+.screen8 {
+    height: 100vh;
+    /* Ocupa toda la altura de la ventana */
+    width: 100%;
+    /* Asegura que el contenido ocupe toda la anchura de la ventana */
+    scroll-snap-align: start;
+    /* Alinea las pantallas con el inicio del contenedor */
 }
 
 /*PANTALLA 0: INICIO----------------------------------------------------------------*/
@@ -155,10 +181,13 @@ body {
 }
 
 .quienSoy {
-    width: 80%; /* 80% del ancho de la pantalla */
-    max-width: 600px; /* Limitar el ancho máximo para pantallas grandes */
+    width: 80%;
+    /* 80% del ancho de la pantalla */
+    max-width: 600px;
+    /* Limitar el ancho máximo para pantallas grandes */
     height: auto;
-    padding-top: 5%; /* Espaciado superior */
+    padding-top: 5%;
+    /* Espaciado superior */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,20 +195,23 @@ body {
 }
 
 /* Espaciado uniforme entre los elementos dentro de .quienSoy */
-.quienSoy > * {
-    margin-bottom: 4%; /* Espaciado entre los elementos */
+.quienSoy>* {
+    margin-bottom: 4%;
+    /* Espaciado entre los elementos */
 }
 
 /* Estilos para los encabezados */
 .quienSoy h2 {
-    font-size: 6vw; /* Tamaño basado en el ancho de la pantalla */
+    font-size: 6vw;
+    /* Tamaño basado en el ancho de la pantalla */
     font-weight: 200;
     color: aliceblue;
     margin: 0;
 }
 
 .quienSoy .soyJose {
-    font-size: 10vw; /* Tamaño más grande basado en el ancho de la pantalla */
+    font-size: 10vw;
+    /* Tamaño más grande basado en el ancho de la pantalla */
     font-weight: 500;
     color: #000c7a;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
@@ -187,18 +219,21 @@ body {
 }
 
 .quienSoy h3 {
-    font-size: 5vw; /* Tamaño basado en el ancho de la pantalla */
+    font-size: 5vw;
+    /* Tamaño basado en el ancho de la pantalla */
     font-weight: 600;
     color: aliceblue;
     margin: 0;
 }
 
 .quienSoy p {
-    font-size: 3.5vw; /* 3.5% del ancho de la pantalla */
+    font-size: 3.5vw;
+    /* 3.5% del ancho de la pantalla */
     color: aliceblue;
     line-height: 1.6;
     text-align: center;
-    width: 80%; /* Ancho del 80% */
+    width: 80%;
+    /* Ancho del 80% */
     margin: 0;
 }
 
@@ -796,12 +831,14 @@ textarea.campo {
         color: aliceblue;
         margin: -2px;
     }
+
     a {
         width: 100%;
         display: flex;
         justify-content: center;
     }
 }
+
 button.btnComienzaYa {
     width: 80%;
     margin: 20px;
@@ -825,7 +862,8 @@ button.btnComienzaYa {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h2{
+
+    h2 {
         color: aliceblue;
     }
 }
@@ -836,7 +874,8 @@ button.btnComienzaYa {
     align-items: center;
     margin: 20px;
     width: 50%;
-    h2{
+
+    h2 {
         font-size: 300%;
         font-weight: 600;
         color: aliceblue;
@@ -845,11 +884,13 @@ button.btnComienzaYa {
         filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 
     }
-    img{
+
+    img {
         width: 40%;
         margin: 0;
     }
-    h3{
+
+    h3 {
         font-weight: 500;
         margin: 0;
         font-size: 80%;
@@ -857,7 +898,7 @@ button.btnComienzaYa {
     }
 }
 
-.resenasContainer{
+.resenasContainer {
     width: 100%;
     height: 25%;
     display: flex;
@@ -868,19 +909,23 @@ button.btnComienzaYa {
 }
 
 .carrusel-container {
-    width: 100%; /* Ancho del contenedor */
+    width: 100%;
+    /* Ancho del contenedor */
     max-width: 600px;
     overflow: hidden;
 }
 
 .carrusel {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Transición más rápida */
+    transition: transform 0.5s ease-in-out;
+    /* Transición más rápida */
 }
 
 .reseña {
-    flex: 0 0 60%; /* Cada reseña ocupa ahora el 60% del contenedor */
-    margin: 20% 20%; /* Ajusta el margen para mantener la separación */
+    flex: 0 0 60%;
+    /* Cada reseña ocupa ahora el 60% del contenedor */
+    margin: 20% 20%;
+    /* Ajusta el margen para mantener la separación */
     box-sizing: border-box;
     text-align: center;
     background-color: #f0f0f0;
@@ -892,7 +937,8 @@ button.btnComienzaYa {
 }
 
 .reseña:last-child {
-    margin-right: 0; /* Elimina el margen derecho de la última reseña */
+    margin-right: 0;
+    /* Elimina el margen derecho de la última reseña */
 }
 
 .nombrePuntaje {
@@ -902,11 +948,13 @@ button.btnComienzaYa {
     justify-content: center;
     align-items: center;
     color: #818181;
-    h4{
+
+    h4 {
         font-weight: 400;
 
     }
-    img{
+
+    img {
         width: 25%;
         margin: 5px;
     }
@@ -918,20 +966,22 @@ button.btnComienzaYa {
     align-items: center;
     justify-content: center;
     color: #818181;
-    h4{
+
+    h4 {
         font-size: 70%;
         color: #818181;
 
     }
 }
 
-.descripcion{
+.descripcion {
     height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    h4{
+    align-items: center;
+
+    h4 {
         font-size: 70%;
         font-weight: 700;
         margin: 10px;
@@ -944,54 +994,43 @@ button.btnComienzaYa {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    h6{
+
+    h6 {
         font-weight: 400;
         font-size: 50%;
         color: #818181;
 
     }
 }
- /*CARRUSEL LOGOS*/
- .carousel-container {
+
+/*CARRUSEL LOGOS*/
+.carousel-container {
     margin: 30px;
     overflow: hidden;
-    width: 100%; /* Ajusta según tu diseño */
+    width: 100%;
+    /* Ajusta según tu diseño */
     height: 8%;
     display: flex;
     align-items: center;
-    background-color: #f0f0f0; /* Fondo del carrusel */
-    position: relative; /* Asegura que los elementos del carrusel se alineen correctamente */
+    background-color: #f0f0f0;
+    /* Fondo del carrusel */
+    position: relative;
+    /* Asegura que los elementos del carrusel se alineen correctamente */
 }
 
 .carousel-track {
     display: flex;
-    gap: 30px; /* Ajusta la separación entre logos */
-    white-space: nowrap; /* Mantiene en una sola línea */
+    gap: 30px;
+    /* Ajusta la separación entre logos */
+    white-space: nowrap;
+    /* Mantiene en una sola línea */
     transform: translateX(0);
 }
 
 .carousel-track img {
-    height: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px;
+    /* Ajusta el tamaño según sea necesario */
     object-fit: contain;
-    margin: 0; /* Asegura que las imágenes no tengan margen extra */
+    margin: 0;
+    /* Asegura que las imágenes no tengan margen extra */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
