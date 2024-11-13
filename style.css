@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -140,41 +141,55 @@ body {
     align-items: center;
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
 }
+
 .quienSoy {
-    width: 80%;
-    height: 50%;
+    width: 80%; /* 80% del ancho de la pantalla */
+    max-width: 600px; /* Limitar el ancho máximo para pantallas grandes */
+    height: auto;
+    padding-top: 5%; /* Espaciado superior */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h2{
-        font-weight: 200;
-        color: aliceblue;
-        margin: 0;
-        padding: 0;
-    }
-    .mano{
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .soyJose{
-        font-size: 250%;
-        font-weight: 500;
-        color: #000c7a;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-        margin: 0;
-        padding: 0;
-    }
-    p{
-        color: aliceblue;
-        font-size: 80%;
-        width: 70%;
-        margin: 10px;
-        text-align: center;
-    }
 }
+
+/* Espaciado uniforme entre los elementos dentro de .quienSoy */
+.quienSoy > * {
+    margin-bottom: 4%; /* Espaciado entre los elementos */
+}
+
+/* Estilos para los encabezados */
+.quienSoy h2 {
+    font-size: 6vw; /* Tamaño basado en el ancho de la pantalla */
+    font-weight: 200;
+    color: aliceblue;
+    margin: 0;
+}
+
+.quienSoy .soyJose {
+    font-size: 10vw; /* Tamaño más grande basado en el ancho de la pantalla */
+    font-weight: 500;
+    color: #000c7a;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    margin: 0;
+}
+
+.quienSoy h3 {
+    font-size: 5vw; /* Tamaño basado en el ancho de la pantalla */
+    font-weight: 600;
+    color: aliceblue;
+    margin: 0;
+}
+
+.quienSoy p {
+    font-size: 3.5vw; /* 3.5% del ancho de la pantalla */
+    color: aliceblue;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%; /* Ancho del 80% */
+    margin: 0;
+}
+
 
 /*PANTALLA 1: CONTRATA----------------------------------------------------------------*/
 .screen1 {
@@ -769,19 +784,24 @@ textarea.campo {
         color: aliceblue;
         margin: -2px;
     }
-
-    button {
-        width: 80%;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 20px;
-        border: none;
-        background-color: #6c00ca;
-        color: aliceblue;
-        font-size: 110%;
-        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
+button.btnComienzaYa {
+    width: 80%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #6c00ca;
+    color: aliceblue;
+    font-size: 110%;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+}
+
 
 /*PANTALLA 8: RESENAS----------------------------------------------------------------*/
 /* Estilos generales para la pantalla */

@@ -52,6 +52,36 @@ function scrollCarousel() {
 scrollCarousel();
 
 
+//SCROLL AUTOMATICO
+let sections = document.querySelectorAll('div[id^="section"]'); // Selecciona todos los div con id que empiecen con 'section'
+let currentSection = 0; // Empezamos en la primera sección
+
+// Función para mover a la siguiente sección
+function scrollToSection(index) {
+    if (index >= 0 && index < sections.length) {
+        sections[index].scrollIntoView({
+            behavior: 'smooth', // Desplazamiento suave
+            block: 'start' // Desplazar la sección al principio de la pantalla
+        });
+        currentSection = index; // Actualizamos la sección actual
+    }
+}
+
+// Detectar el evento de scroll
+window.addEventListener('wheel', function(event) {
+    if (event.deltaY > 0) { // Scroll hacia abajo
+        if (currentSection < sections.length - 1) {
+            scrollToSection(currentSection + 1); // Mover a la siguiente sección
+        }
+    } else if (event.deltaY < 0) { // Scroll hacia arriba
+        if (currentSection > 0) {
+            scrollToSection(currentSection - 1); // Mover a la sección anterior
+        }
+    }
+});
+
+
+
 
 
 
