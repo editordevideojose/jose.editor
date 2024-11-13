@@ -53,46 +53,46 @@ scrollCarousel();
 
 //SCROLL AUTOMATICO
 // Selección de todas las pantallas con las clases correspondientes
-let screens = document.querySelectorAll('.screen0, .screen00, .screen1, .screen2, .screen3, .screen4, .screen5, .screen6, .screen7, .screen8'); // Ajustar según el número de pantallas
-let currentIndex = 0;  // Índice de la pantalla actual
+// let screens = document.querySelectorAll('.screen0, .screen00, .screen1, .screen2, .screen3, .screen4, .screen5, .screen6, .screen7, .screen8'); // Ajustar según el número de pantallas
+// let currentIndex = 0;  // Índice de la pantalla actual
 
-// Función para ir a la pantalla específica
-function goToScreen(index) {
-    if (index >= 0 && index < screens.length) {
-        window.scrollTo({
-            top: screens[index].offsetTop, // Desplaza hasta la posición de la pantalla
-            behavior: 'smooth'  // Desplazamiento suave
-        });
-        currentIndex = index;  // Actualiza el índice de la pantalla actual
-    }
-}
+// // Función para ir a la pantalla específica
+// function goToScreen(index) {
+//     if (index >= 0 && index < screens.length) {
+//         window.scrollTo({
+//             top: screens[index].offsetTop, // Desplaza hasta la posición de la pantalla
+//             behavior: 'smooth'  // Desplazamiento suave
+//         });
+//         currentIndex = index;  // Actualiza el índice de la pantalla actual
+//     }
+// }
 
-// Detecta el desplazamiento de la rueda del mouse (scroll)
-window.addEventListener('wheel', function(event) {
-    if (event.deltaY > 0) {
-        // Scroll hacia abajo: mover a la siguiente pantalla
-        goToScreen(currentIndex + 1);
-    } else {
-        // Scroll hacia arriba: mover a la pantalla anterior
-        goToScreen(currentIndex - 1);
-    }
-});
+// // Detecta el desplazamiento de la rueda del mouse (scroll)
+// window.addEventListener('wheel', function(event) {
+//     if (event.deltaY > 0) {
+//         // Scroll hacia abajo: mover a la siguiente pantalla
+//         goToScreen(currentIndex + 1);
+//     } else {
+//         // Scroll hacia arriba: mover a la pantalla anterior
+//         goToScreen(currentIndex - 1);
+//     }
+// });
 
-// Detectar el gesto de swipe en dispositivos móviles
-let touchStartY = 0;
-window.addEventListener('touchstart', function(event) {
-    touchStartY = event.touches[0].clientY; // Guarda la posición inicial del toque
-});
+// // Detectar el gesto de swipe en dispositivos móviles
+// let touchStartY = 0;
+// window.addEventListener('touchstart', function(event) {
+//     touchStartY = event.touches[0].clientY; // Guarda la posición inicial del toque
+// });
 
-window.addEventListener('touchend', function(event) {
-    const touchEndY = event.changedTouches[0].clientY; // Guarda la posición final del toque
+// window.addEventListener('touchend', function(event) {
+//     const touchEndY = event.changedTouches[0].clientY; // Guarda la posición final del toque
 
-    if (touchEndY < touchStartY) {
-        // Si se desliza hacia abajo: mover a la siguiente pantalla
-        goToScreen(currentIndex + 1);
-    } else if (touchEndY > touchStartY) {
-        // Si se desliza hacia arriba: mover a la pantalla anterior
-        goToScreen(currentIndex - 1);
-    }
-});
+//     if (touchEndY < touchStartY) {
+//         // Si se desliza hacia abajo: mover a la siguiente pantalla
+//         goToScreen(currentIndex + 1);
+//     } else if (touchEndY > touchStartY) {
+//         // Si se desliza hacia arriba: mover a la pantalla anterior
+//         goToScreen(currentIndex - 1);
+//     }
+// });
 
