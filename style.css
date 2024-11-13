@@ -130,6 +130,52 @@ body {
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
 
+/*PANTALLA 00: QUIEN SOY----------------------------------------------------------------*/
+.screen00 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+}
+.quienSoy {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-weight: 200;
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+    }
+    .mano{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .soyJose{
+        font-size: 250%;
+        font-weight: 500;
+        color: #000c7a;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        color: aliceblue;
+        font-size: 80%;
+        width: 70%;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
 /*PANTALLA 1: CONTRATA----------------------------------------------------------------*/
 .screen1 {
     z-index: 0;
