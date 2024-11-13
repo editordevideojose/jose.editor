@@ -31,6 +31,31 @@ function mostrarSiguienteReseña() {
 
 setInterval(mostrarSiguienteReseña, 3000);  // Cambiar cada 3 segundos
 
+const track = document.querySelector('.carousel-track');
+let scrollPosition = 0;
+const speed = 1; // Ajusta la velocidad del carrusel
+
+function scrollCarousel() {
+    scrollPosition -= speed;
+    track.style.transform = `translateX(${scrollPosition}px)`;
+
+    // Cuando el primer logo sale completamente, lo mueve al final
+    const firstLogo = track.firstElementChild;
+    if (Math.abs(scrollPosition) >= firstLogo.offsetWidth + 30) { // 30 es el espacio entre logos
+        scrollPosition = 0;
+        track.appendChild(firstLogo);
+    }
+    requestAnimationFrame(scrollCarousel); // Llama a la función de desplazamiento continuamente
+}
+
+// Inicia el ciclo de desplazamiento
+scrollCarousel();
+
+
+
+
+
+
 
 
 

@@ -874,38 +874,35 @@ textarea.campo {
     }
 }
  /*CARRUSEL LOGOS*/
- .carousel {
-    margin: 20px 0;
-    width: 100%;
-    height: 8%;
+ .carousel-container {
+    margin: 30px;
     overflow: hidden;
-    position: relative;
-    background-color: #ffffff;
-    padding: 20px 0; /* Opcional, para espacio alrededor del carrusel */
+    width: 100%; /* Ajusta según tu diseño */
+    height: 8%;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Fondo del carrusel */
+    position: relative; /* Asegura que los elementos del carrusel se alineen correctamente */
 }
 
 .carousel-track {
     display: flex;
-    gap: 20px;
-    animation: scroll 5s linear infinite;
-    /* Hacer que el contenedor sea lo suficientemente largo para el loop */
+    gap: 30px; /* Ajusta la separación entre logos */
+    white-space: nowrap; /* Mantiene en una sola línea */
+    transform: translateX(0);
 }
 
 .carousel-track img {
-    height: 50px; /* Tamaño de los logos */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
     object-fit: contain;
-    flex-shrink: 0; /* Los logos no se comprimen */
+    margin: 0; /* Asegura que las imágenes no tengan margen extra */
 }
 
-/* Animación continua */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
+
+
+
+
+
 
 
 
