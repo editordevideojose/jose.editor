@@ -53,13 +53,17 @@ function scrollCarousel() {
 scrollCarousel();
 
 // VIEWPORT ///////////////////////////////////////
-function ajustarAltura() {
-    const alturaViewport = window.visualViewport.height;
-    document.documentElement.style.setProperty('--vh', `${alturaViewport * 0.01}px`);
+function updateViewportHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
-ajustarAltura();
-window.visualViewport.addEventListener('resize', ajustarAltura);
+// Ejecuta la función inicialmente
+updateViewportHeight();
+
+// Vuelve a ejecutar cada vez que cambia el tamaño de la ventana
+window.addEventListener('resize', updateViewportHeight);
+
 
 
 
