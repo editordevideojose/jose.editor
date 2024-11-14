@@ -9,9 +9,7 @@ body {
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);*/
     height: calc(var(--vh, 1vh) * 100);
-}
-
-body {
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -70,13 +68,13 @@ body {
     .edito {
         margin-bottom: -20px;
         font-weight: 500;
-        font-size: 220%;
+        font-size: 190%;
     }
 
     .todo {
         margin: 0 0 -20px 0;
         font-weight: 700;
-        font-size: 220%;
+        font-size: 190%;
         filter: drop-shadow(0 0 2px rgba(255, 242, 0, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
         /* Ajusta el filtro para cambiar el color */
 
@@ -84,6 +82,7 @@ body {
 
     .tucontenido {
         font-weight: 500;
+        font-size: 160%;
     }
 }
 
