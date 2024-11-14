@@ -5,9 +5,10 @@
 }
 
 body {
-    min-height: 100vh;
+    /*min-height: 100vh;
     padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);*/
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 body {

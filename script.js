@@ -52,5 +52,15 @@ function scrollCarousel() {
 // Inicia el ciclo de desplazamiento
 scrollCarousel();
 
+// VIEWPORT ///////////////////////////////////////
+function ajustarAltura() {
+    const alturaViewport = window.visualViewport.height;
+    document.documentElement.style.setProperty('--vh', `${alturaViewport * 0.01}px`);
+}
+
+ajustarAltura();
+window.visualViewport.addEventListener('resize', ajustarAltura);
+
+
 
 
