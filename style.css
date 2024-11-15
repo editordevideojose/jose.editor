@@ -1,27 +1,28 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    /*min-height: 100vh;
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);*/
+    text-decoration: none;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    height: calc(var(--vh, 1vh) * 100);
 }
 
-/*PANTALLA 0: INICIO----------------------------------------------------------------*/
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+}
+
+/*PANTALLA 1: INICIO----------------------------------------------------------------*/
 .screen0 {
     position: relative;
-    /* Necesario para que los hijos con position: absolute se posicionen dentro */
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: rgb(0, 19, 255);
     background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    /*background-image: linear-gradient(to right bottom, #000819, #001638, #001e59, #0c2379, #362296, #3d2098, #431d9b, #4a1a9d, #301e87, #191d71, #061959, #001441);*/
 }
 
 .logo {
@@ -37,8 +38,6 @@ body {
     transform: translateX(-50%);
     z-index: 2;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
-    /* Ajusta el filtro para cambiar el color */
-
 }
 
 .oval-background {
@@ -75,8 +74,6 @@ body {
         font-weight: 700;
         font-size: 190%;
         filter: drop-shadow(0 0 2px rgba(255, 242, 0, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
-        /* Ajusta el filtro para cambiar el color */
-
     }
 
     .tucontenido {
@@ -108,16 +105,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Capa negra semitransparente */
-    z-index: 1;
-    /* Asegura que la capa esté encima de la imagen */
-    mask-image: url('/Proyecto nuevo.png');
-    /* Ruta de tu imagen PNG */
-    mask-size: cover;
-    /* Asegura que la máscara cubra todo */
-    mask-repeat: no-repeat;
-    /* Evita que se repita la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+    z-index: 1; /* Asegura que la capa esté encima de la imagen */
+    mask-image: url('/Proyecto nuevo.png'); /* Ruta de tu imagen PNG */
+    mask-size: cover; /* Asegura que la máscara cubra todo */
+    mask-repeat: no-repeat; /* Evita que se repita la imagen */
 }
 
 .btnComenzar {
@@ -135,41 +127,24 @@ body {
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
 
-/*PANTALLA 00: QUIEN SOY----------------------------------------------------------------*/
-.screen00 {
-    width: 100vw;
-    height: 100vh;
+/*PANTALLA 2: QUIEN SOY----------------------------------------------------------------*/
+.quienSoy {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
 }
 
 .quienSoy {
-    width: 80%;
-    /* 80% del ancho de la pantalla */
-    max-width: 600px;
-    /* Limitar el ancho máximo para pantallas grandes */
-    height: auto;
-    padding-top: 5%;
-    /* Espaciado superior */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Espaciado uniforme entre los elementos dentro de .quienSoy */
-.quienSoy>* {
     margin-bottom: 4%;
-    /* Espaciado entre los elementos */
 }
 
-/* Estilos para los encabezados */
 .quienSoy h2 {
     font-size: 6vw;
-    /* Tamaño basado en el ancho de la pantalla */
     font-weight: 200;
     color: aliceblue;
     margin: 0;
@@ -177,7 +152,6 @@ body {
 
 .quienSoy .soyJose {
     font-size: 10vw;
-    /* Tamaño más grande basado en el ancho de la pantalla */
     font-weight: 500;
     color: #000c7a;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
@@ -186,7 +160,6 @@ body {
 
 .quienSoy h3 {
     font-size: 5vw;
-    /* Tamaño basado en el ancho de la pantalla */
     font-weight: 600;
     color: aliceblue;
     margin: 0;
@@ -194,191 +167,14 @@ body {
 
 .quienSoy p {
     font-size: 3.5vw;
-    /* 3.5% del ancho de la pantalla */
     color: aliceblue;
     line-height: 1.6;
     text-align: center;
     width: 80%;
-    /* Ancho del 80% */
     margin: 0;
 }
 
-
-/*PANTALLA 1: CONTRATA----------------------------------------------------------------*/
-.screen1 {
-    z-index: 0;
-    color: aliceblue;
-    width: 100vw;
-    height: 100vh;
-    /*border: solid rgb(0, 255, 94) 10px;*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: rgb(0, 19, 255);
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-}
-
-.cards {
-    z-index: 1;
-    display: flex;
-    width: 80%;
-    height: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    position: relative;
-    z-index: 2;
-    color: blue;
-    background-color: aliceblue;
-    display: flex;
-    border-radius: 20px;
-    width: 90%;
-    height: 40%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-}
-
-.image-container {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.reels {
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5%;
-    /* Ajusta este valor para desplazar la imagen hacia abajo */
-
-}
-
-h3 {
-    margin: 20px 0 0 0;
-    z-index: 5;
-}
-
-.loquiero {
-    font-weight: 600;
-    background-color: blue;
-    color: antiquewhite;
-    border: none;
-    width: 50%;
-    padding: 10px;
-    border-radius: 30px;
-    position: absolute;
-    bottom: 10%;
-    z-index: 3;
-    /* Asegura que esté sobre la imagen */
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-}
-
-/*PANTALLA 2: MI SERVICIO----------------------------------------------------------------*/
-.screen2 {
-    width: 100vw;
-    height: 100vh;
-    /*border: solid rgb(72, 0, 255) 10px;*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-}
-
-.screen2 h2 {
-    color: aliceblue;
-}
-
-.tresPasos {
-    width: 75%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: #6c00ca;
-}
-
-.paso {
-    width: 100%;
-    height: 15%;
-    margin: 20px;
-    border-radius: 20px;
-    border: solid rgba(121, 0, 233, 0.791);
-    ;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-    box-sizing: border-box;
-}
-
-.paso h3 {
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 90%;
-}
-
-.numeroPaso {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 18px;
-    align-items: center;
-    background-color: #6c00ca;
-    color: aliceblue;
-    font-size: 200%;
-    font-weight: 600;
-    box-sizing: border-box;
-}
-
-.accionPaso {
-    width: 75%;
-    margin-left: 10px;
-}
-
-.listoPasos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 90%;
-
-}
-
-.listoPasos h3 {
-    margin: 0 auto;
-    font-weight: 400;
-    color: aliceblue;
-}
-
-/*PANTALLA 3: ELEGI TU TIPO----------------------------------------------------------------*/
+/*PANTALLA 3: MI RPOCESO DE TRABAJO----------------------------------------------------------------*/
 .screen3 {
     width: 100vw;
     height: 100vh;
@@ -484,7 +280,177 @@ h3 {
     }
 }
 
-/*PANTALLA 4: ELEGI TU TIPO----------------------------------------------------------------*/
+/*PANTALLA 4: CONTRATA EN 3 PASOS----------------------------------------------------------------*/
+.screen2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+}
+
+.screen2 h2 {
+    color: aliceblue;
+}
+
+.tresPasos {
+    width: 75%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #6c00ca;
+}
+
+.paso {
+    width: 100%;
+    height: 15%;
+    margin: 20px;
+    border-radius: 20px;
+    border: solid rgba(121, 0, 233, 0.791);
+    ;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+    box-sizing: border-box;
+}
+
+.paso h3 {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.numeroPaso {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    align-items: center;
+    background-color: #6c00ca;
+    color: aliceblue;
+    font-size: 200%;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.accionPaso {
+    width: 75%;
+    margin-left: 10px;
+}
+
+.listoPasos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+
+}
+
+.listoPasos h3 {
+    margin: 0 auto;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+/*PANTALLA 5,6,7: ELIGE TU TIPO DE CONTENIDO----------------------------------------------------------------*/
+.screen1 {
+    z-index: 0;
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    /*border: solid rgb(0, 255, 94) 10px;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 19, 255);
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+}
+
+.cards {
+    z-index: 1;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    color: blue;
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 20px;
+    width: 90%;
+    height: 40%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+}
+
+.image-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.reels {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+}
+
+h3 {
+    margin: 20px 0 0 0;
+    z-index: 5;
+}
+
+.loquiero {
+    font-weight: 600;
+    background-color: blue;
+    color: antiquewhite;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 3;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/*PANTALLA 8: PACKS PLANES----------------------------------------------------------------*/
 .screen4 {
     width: 100vw;
     height: 100vh;
@@ -605,7 +571,249 @@ h3 {
     }
 }
 
-/*PANTALLA 5: ELEGI TU TIPO----------------------------------------------------------------*/
+/*PANTALLA 9: RESENAS----------------------------------------------------------------*/
+.screen8 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        color: aliceblue;
+    }
+}
+
+.puntaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+    h2 {
+        font-size: 300%;
+        font-weight: 600;
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+
+    }
+    img {
+        width: 40%;
+        margin: 0;
+    }
+    h3 {
+        font-weight: 500;
+        margin: 0;
+        font-size: 80%;
+        color: aliceblue;
+    }
+}
+
+.resenasContainer {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.reseña {
+    flex: 0 0 60%;
+    margin: 20% 20%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+    filter: drop-shadow(0 0 20px rgb(144, 0, 255));
+}
+.reseña:last-child {
+    margin-right: 0;
+}
+
+.nombrePuntaje {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #818181;
+    h4 {
+        font-weight: 400;
+
+    }
+    img {
+        width: 25%;
+        margin: 5px;
+    }
+}
+
+.grupoNombre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #818181;
+    h4 {
+        font-size: 70%;
+        color: #818181;
+
+    }
+}
+
+.descripcion {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        font-size: 70%;
+        font-weight: 700;
+        margin: 10px;
+        color: #2b2b2b;
+    }
+}
+
+.fecha {
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h6 {
+        font-weight: 400;
+        font-size: 50%;
+        color: #818181;
+
+    }
+}
+
+/*CARRUSEL LOGOS*/
+.carousel-container {
+    margin: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+    transform: translateX(0);
+}
+
+.carousel-track img {
+    height: 50px;
+    object-fit: contain;
+    margin: 0;
+}
+
+/*PANTALLA 10: FAQS----------------------------------------------------------------*/
+.screen6 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
+    h2 {
+        color: aliceblue;
+        margin-bottom: 0 auto;
+    }
+}
+
+.faqs {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos generales del acordeón */
+.accordion {
+    width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+/* Estilos de cada pregunta del acordeón */
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
+
+}
+
+/* Estilos de la cabecera de cada pregunta */
+.accordion-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+    font-size: 90%;
+    font-weight: 600;
+}
+
+/* Estilo para la pregunta abierta */
+.accordion-header.active {
+    background-color: #6c00ca;
+    color: #fff;
+}
+
+/* Icono de flecha */
+.accordion-header .arrow {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+/* Rotar la flecha cuando se abre */
+.accordion-header.active .arrow {
+    transform: rotate(90deg);
+}
+
+/* Contenido de la respuesta */
+.accordion-content {
+    padding: 15px;
+    display: none;
+    background-color: aliceblue;
+    font-size: 80%;
+
+}
+
+/*PANTALLA 11: FORMULARIO----------------------------------------------------------------*/
 .screen5 {
     width: 100vw;
     height: 100vh;
@@ -684,106 +892,8 @@ textarea.campo {
     font-weight: 300;
 }
 
-/*PANTALLA 6: FAQS----------------------------------------------------------------*/
-.screen6 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
 
-    h2 {
-        color: aliceblue;
-        margin-bottom: 0 auto;
-    }
-}
-
-.faqs {
-    width: 80%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilos generales del acordeón */
-.accordion {
-    width: 100%;
-    width: 100%;
-    margin: auto;
-}
-
-/* Estilos de cada pregunta del acordeón */
-.accordion-item {
-    border: 1px solid #ddd;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    overflow: hidden;
-    filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
-}
-
-/* Estilos de la cabecera de cada pregunta */
-.accordion-header {
-    background-color: #f5f5f5;
-    padding: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.3s;
-    font-size: 90%;
-    font-weight: 600;
-}
-
-/* Estilo para la pregunta abierta */
-.accordion-header.active {
-    background-color: #6c00ca;
-    color: #fff;
-}
-
-/* Icono de flecha */
-.accordion-header .arrow {
-    font-size: 1.2em;
-    transition: transform 0.3s;
-}
-
-/* Rotar la flecha cuando se abre */
-.accordion-header.active .arrow {
-    transform: rotate(90deg);
-}
-
-/* Contenido de la respuesta */
-.accordion-content {
-    padding: 15px;
-    display: none;
-    background-color: aliceblue;
-    font-size: 80%;
-
-}
-
-/*PANTALLA 7: FINAL----------------------------------------------------------------*/
-.screen7 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-
-    h2 {
-        color: aliceblue;
-        margin-bottom: 0 auto;
-    }
-}
-
+/*PANTALLA 12: FINAL LLAMADO A LA ACCION----------------------------------------------------------------*/
 .finalContainer {
     width: 80%;
     height: 50%;
@@ -791,13 +901,11 @@ textarea.campo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     h2 {
         font-size: 180%;
         color: aliceblue;
         margin: -2px;
     }
-
     a {
         width: 100%;
         display: flex;
@@ -815,188 +923,4 @@ button.btnComienzaYa {
     color: aliceblue;
     font-size: 110%;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-}
-
-
-/*PANTALLA 8: RESENAS----------------------------------------------------------------*/
-/* Estilos generales para la pantalla */
-.screen8 {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    h2 {
-        color: aliceblue;
-    }
-}
-
-.puntaje {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    width: 50%;
-
-    h2 {
-        font-size: 300%;
-        font-weight: 600;
-        color: aliceblue;
-        margin: 0;
-        padding: 0;
-        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
-    }
-
-    img {
-        width: 40%;
-        margin: 0;
-    }
-
-    h3 {
-        font-weight: 500;
-        margin: 0;
-        font-size: 80%;
-        color: aliceblue;
-    }
-}
-
-.resenasContainer {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.carrusel-container {
-    width: 100%;
-    /* Ancho del contenedor */
-    max-width: 600px;
-    overflow: hidden;
-}
-
-.carrusel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    /* Transición más rápida */
-}
-
-.reseña {
-    flex: 0 0 60%;
-    /* Cada reseña ocupa ahora el 60% del contenedor */
-    margin: 20% 20%;
-    /* Ajusta el margen para mantener la separación */
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    font-size: 1.2em;
-    color: #333;
-    padding: 10px;
-    filter: drop-shadow(0 0 20px rgb(144, 0, 255));
-}
-
-.reseña:last-child {
-    margin-right: 0;
-    /* Elimina el margen derecho de la última reseña */
-}
-
-.nombrePuntaje {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #818181;
-
-    h4 {
-        font-weight: 400;
-
-    }
-
-    img {
-        width: 25%;
-        margin: 5px;
-    }
-}
-
-.grupoNombre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #818181;
-
-    h4 {
-        font-size: 70%;
-        color: #818181;
-
-    }
-}
-
-.descripcion {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h4 {
-        font-size: 70%;
-        font-weight: 700;
-        margin: 10px;
-        color: #2b2b2b;
-    }
-}
-
-.fecha {
-    height: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    h6 {
-        font-weight: 400;
-        font-size: 50%;
-        color: #818181;
-
-    }
-}
-
-/*CARRUSEL LOGOS*/
-.carousel-container {
-    margin: 30px;
-    overflow: hidden;
-    width: 100%;
-    /* Ajusta según tu diseño */
-    height: 8%;
-    display: flex;
-    align-items: center;
-    background-color: #f0f0f0;
-    /* Fondo del carrusel */
-    position: relative;
-    /* Asegura que los elementos del carrusel se alineen correctamente */
-}
-
-.carousel-track {
-    display: flex;
-    gap: 30px;
-    /* Ajusta la separación entre logos */
-    white-space: nowrap;
-    /* Mantiene en una sola línea */
-    transform: translateX(0);
-}
-
-.carousel-track img {
-    height: 50px;
-    /* Ajusta el tamaño según sea necesario */
-    object-fit: contain;
-    margin: 0;
-    /* Asegura que las imágenes no tengan margen extra */
 }

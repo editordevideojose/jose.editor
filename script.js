@@ -53,16 +53,6 @@ function scrollCarousel() {
 scrollCarousel();
 
 // VIEWPORT ///////////////////////////////////////
-function updateViewportHeight() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-// Ejecuta la función inicialmente
-updateViewportHeight();
-
-// Vuelve a ejecutar cada vez que cambia el tamaño de la ventana
-window.addEventListener('resize', updateViewportHeight);
 
 
 
