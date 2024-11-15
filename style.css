@@ -856,6 +856,7 @@
         width: 100%;
         border: none;
         margin: 5px;
+        display: flex;
     }
 
     .checkbox-container input[type="checkbox"] {
