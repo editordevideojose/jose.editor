@@ -105,11 +105,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
-    z-index: 1; /* Asegura que la capa esté encima de la imagen */
-    mask-image: url('/Proyecto nuevo.png'); /* Ruta de tu imagen PNG */
-    mask-size: cover; /* Asegura que la máscara cubra todo */
-    mask-repeat: no-repeat; /* Evita que se repita la imagen */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Capa negra semitransparente */
+    z-index: 1;
+    /* Asegura que la capa esté encima de la imagen */
+    mask-image: url('/Proyecto nuevo.png');
+    /* Ruta de tu imagen PNG */
+    mask-size: cover;
+    /* Asegura que la máscara cubra todo */
+    mask-repeat: no-repeat;
+    /* Evita que se repita la imagen */
 }
 
 .btnComenzar {
@@ -161,7 +166,7 @@
 .quienSoy h3 {
     font-size: 5vw;
     font-weight: 600;
-    color: aliceblue;
+    color: rgb(90, 90, 90);
     margin: 0;
 }
 
@@ -175,16 +180,7 @@
 }
 
 /*PANTALLA 3: MI RPOCESO DE TRABAJO----------------------------------------------------------------*/
-.screen3 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-
+#section3 {
     h2 {
         color: aliceblue;
     }
@@ -195,7 +191,7 @@
     }
 
     p {
-        color: #6c00ca;
+        color: #9c2bfe;
     }
 
     img {
@@ -217,7 +213,7 @@
 
 .columns {
     width: 100%;
-    height: 44%;
+    height: 44.5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -225,22 +221,23 @@
 }
 
 .colUno {
-    width: 50%;
+    width: 47%;
     height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin-inline: 5px;
+    margin-inline: -6px;
+    margin-top: -32px ;
 }
 
 .procesoCol {
-    margin: 5px;
+    margin-bottom: 10px;
     color: aliceblue;
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 38%;
     background-color: rgb(0, 1, 56);
     border-radius: 10px;
     flex-direction: column;
@@ -249,8 +246,6 @@
     align-items: center;
     text-align: center;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
-
     p {
         font-weight: 400;
         font-size: 70%;
@@ -260,10 +255,9 @@
 
 .proceso {
     color: aliceblue;
-    margin: 5px;
     display: flex;
-    width: 50%;
-    height: 20%;
+    width: 40%;
+    height: 17%;
     background-color: rgb(0, 1, 56);
     border-radius: 10px;
     flex-direction: column;
@@ -272,7 +266,6 @@
     align-items: center;
     text-align: center;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
     p {
         font-weight: 400;
         font-size: 80%;
@@ -281,24 +274,13 @@
 }
 
 /*PANTALLA 4: CONTRATA EN 3 PASOS----------------------------------------------------------------*/
-.screen2 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-}
-
 .screen2 h2 {
     color: aliceblue;
 }
 
 .tresPasos {
     width: 75%;
-    height: 60%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -309,19 +291,17 @@
 
 .paso {
     width: 100%;
-    height: 15%;
-    margin: 20px;
+    height: 25%;
+    margin: 10px;
     border-radius: 20px;
-    border: solid rgba(121, 0, 233, 0.791);
-    ;
-    background-color: aliceblue;
+    border: solid rgb(108, 0, 202);
+    background-color: rgb(217, 217, 217);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-    box-sizing: border-box;
 }
 
 .paso h3 {
@@ -337,11 +317,10 @@
     justify-content: center;
     border-radius: 18px;
     align-items: center;
-    background-color: #6c00ca;
+    background-color: rgb(108, 0, 202);
     color: aliceblue;
     font-size: 200%;
     font-weight: 600;
-    box-sizing: border-box;
 }
 
 .accionPaso {
@@ -366,19 +345,8 @@
 }
 
 /*PANTALLA 5,6,7: ELIGE TU TIPO DE CONTENIDO----------------------------------------------------------------*/
-.screen1 {
+#section5 {
     z-index: 0;
-    color: aliceblue;
-    width: 100vw;
-    height: 100vh;
-    /*border: solid rgb(0, 255, 94) 10px;*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: rgb(0, 19, 255);
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
 }
 
 .cards {
@@ -451,22 +419,6 @@ h3 {
 }
 
 /*PANTALLA 8: PACKS PLANES----------------------------------------------------------------*/
-.screen4 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-
-    h2 {
-        color: aliceblue;
-        margin-bottom: 40px;
-    }
-}
-
 .planes {
     width: 70%;
     height: 60%;
@@ -580,6 +532,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     h2 {
         color: aliceblue;
     }
@@ -591,6 +544,7 @@ h3 {
     align-items: center;
     margin: 20px;
     width: 50%;
+
     h2 {
         font-size: 300%;
         font-weight: 600;
@@ -600,10 +554,12 @@ h3 {
         filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 
     }
+
     img {
         width: 40%;
         margin: 0;
     }
+
     h3 {
         font-weight: 500;
         margin: 0;
@@ -645,6 +601,7 @@ h3 {
     padding: 10px;
     filter: drop-shadow(0 0 20px rgb(144, 0, 255));
 }
+
 .reseña:last-child {
     margin-right: 0;
 }
@@ -656,10 +613,12 @@ h3 {
     justify-content: center;
     align-items: center;
     color: #818181;
+
     h4 {
         font-weight: 400;
 
     }
+
     img {
         width: 25%;
         margin: 5px;
@@ -672,6 +631,7 @@ h3 {
     align-items: center;
     justify-content: center;
     color: #818181;
+
     h4 {
         font-size: 70%;
         color: #818181;
@@ -685,6 +645,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h4 {
         font-size: 70%;
         font-weight: 700;
@@ -698,6 +659,7 @@ h3 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     h6 {
         font-weight: 400;
         font-size: 50%;
@@ -732,21 +694,6 @@ h3 {
 }
 
 /*PANTALLA 10: FAQS----------------------------------------------------------------*/
-.screen6 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-    h2 {
-        color: aliceblue;
-        margin-bottom: 0 auto;
-    }
-}
-
 .faqs {
     width: 80%;
     height: 70%;
@@ -901,11 +848,13 @@ textarea.campo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h2 {
         font-size: 180%;
         color: aliceblue;
         margin: -2px;
     }
+
     a {
         width: 100%;
         display: flex;
