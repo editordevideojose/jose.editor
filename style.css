@@ -811,11 +811,13 @@
         justify-content: center;
         align-items: center;
         background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
-
         h2 {
             color: aliceblue;
             margin-bottom: 0 auto;
         }
+    }
+    .formSubtitulo {
+        font-weight: 300;
     }
 
     .form {
@@ -850,14 +852,19 @@
     }
 
     .checkbox-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
         color: white;
+        width: 100%;
+        border: none;
+        margin: 5px;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        transform: scale(2); /* Ajusta el tamaño del checkbox */
     }
 
     .checkbox-label {
-        font-size: 16px;
+        font-size: 14px;
+        margin-left: 10px;
     }
 
     .boton {
@@ -874,10 +881,6 @@
 
     .boton:hover {
         background-color: #003f8a;
-    }
-
-    .formSubtitulo {
-        font-weight: 300;
     }
 }
 
