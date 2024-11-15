@@ -834,7 +834,7 @@
     }
 
     .label {
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .campo {
@@ -843,12 +843,13 @@
         border: none;
         margin: 5px 0;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 90%;
     }
 
     textarea.campo {
         height: 100px;
         resize: vertical;
+        font-size: 90%;
     }
 
     .checkbox-container {
