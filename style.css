@@ -106,15 +106,10 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Capa negra semitransparente */
     z-index: 1;
-    /* Asegura que la capa esté encima de la imagen */
     mask-image: url('/Proyecto nuevo.png');
-    /* Ruta de tu imagen PNG */
     mask-size: cover;
-    /* Asegura que la máscara cubra todo */
     mask-repeat: no-repeat;
-    /* Evita que se repita la imagen */
 }
 
 .btnComenzar {
@@ -142,10 +137,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
 }
 
-.quienSoy {
-    margin-bottom: 4%;
+.imgFlecha{
+    width: 20%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    margin: -20px auto;
 }
 
 .quienSoy h2 {
@@ -156,10 +154,8 @@
 }
 
 .quienSoy .soyJose {
-    font-size: 10vw;
+    font-size: 250%;
     font-weight: 500;
-    color: #000c7a;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
     margin: 0;
 }
 
@@ -167,16 +163,19 @@
     font-size: 5vw;
     font-weight: 600;
     color: rgb(90, 90, 90);
+    color: #000c7a;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
     margin: 0;
 }
 
 .quienSoy p {
     font-size: 3.5vw;
+    font-weight: 400;
     color: aliceblue;
     line-height: 1.6;
     text-align: center;
     width: 80%;
-    margin: 0;
+    margin: 25px;
 }
 
 /*PANTALLA 3: MI RPOCESO DE TRABAJO----------------------------------------------------------------*/
@@ -254,6 +253,7 @@
 }
 
 .proceso {
+    margin-bottom: 4px;
     color: aliceblue;
     display: flex;
     width: 40%;
@@ -421,7 +421,7 @@ h3 {
 /*PANTALLA 8: PACKS PLANES----------------------------------------------------------------*/
 .planes {
     width: 70%;
-    height: 60%;
+    height: 63%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -482,7 +482,7 @@ h3 {
         padding: 5px 40px;
         border-radius: 20px;
         border: none;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .subtitulo {
