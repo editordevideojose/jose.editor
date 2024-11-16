@@ -1009,4 +1009,9 @@
         border-color: #007bff;
         outline: none;
     }
+
+    .checkboxSolicitud{
+        margin-bottom: 15px; 
+        width: 100%;
+    }
 }
