@@ -52,7 +52,7 @@ function scrollCarousel() {
 // Inicia el ciclo de desplazamiento
 scrollCarousel();
 
-// VIEWPORT ///////////////////////////////////////
+
 
 
 

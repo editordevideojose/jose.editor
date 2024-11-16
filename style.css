@@ -94,7 +94,7 @@
     .img-container {
         margin: 0 auto;
         position: relative;
-        width: 90%;
+        width: 82%;
         height: 100%;
         border-radius: 10px;
         overflow: visible;
@@ -108,7 +108,7 @@
         filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
     }
 
-    .overlay {
+    /* .overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -119,7 +119,7 @@
         mask-image: url('/Proyecto nuevo.png');
         mask-size: cover;
         mask-repeat: no-repeat;
-    }
+    } */
 
     .btnComenzar {
         border: none;
@@ -127,9 +127,10 @@
         padding: 10px 30px;
         font-size: 150%;
         border-radius: 40px;
-        background-color: aliceblue;
-        color: rgb(34, 34, 34);
+        background-color: rgb(255, 221, 0);
+        color: rgb(0, 19, 101);
         position: absolute;
+        font-weight: 600;
         top: 80%;
         left: 50%;
         transform: translateX(-50%);
@@ -177,7 +178,7 @@
         font-weight: 600;
         color: rgb(90, 90, 90);
         color: #000c7a;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
         margin: 0;
     }
 
@@ -205,7 +206,7 @@
     }
 }
 
-/*PANTALLA 3: MI RPOCESO DE TRABAJO----------------------------------------------------------------*/
+/*PANTALLA 3: MI PROCESO DE TRABAJO----------------------------------------------------------------*/
 @media all {
     #section3 {
         h2 {
@@ -302,6 +303,7 @@
             margin: 0 auto;
         }
     }
+
 }
 
 /*PANTALLA 4: CONTRATA EN 3 PASOS----------------------------------------------------------------*/
@@ -311,6 +313,7 @@
     }
 
     .tresPasos {
+        margin-top: 40px;
         width: 75%;
         height: 30%;
         display: flex;
@@ -358,22 +361,6 @@
     .accionPaso {
         width: 75%;
         margin-left: 10px;
-    }
-
-    .listoPasos {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 90%;
-
-    }
-
-    .listoPasos h3 {
-        margin: 0 auto;
-        font-weight: 400;
-        color: aliceblue;
     }
 }
 
@@ -965,7 +952,7 @@
         width: 100%;
     }
 
-    .pasosParaCliente{
+    .pasosParaCliente {
         margin-bottom: 30px;
     }
 
@@ -975,6 +962,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+
         img {
             width: 10%;
             margin: 0;
@@ -1010,8 +998,8 @@
         outline: none;
     }
 
-    .checkboxSolicitud{
-        margin-bottom: 15px; 
+    .checkboxSolicitud {
+        margin-bottom: 15px;
         width: 100%;
     }
 }
