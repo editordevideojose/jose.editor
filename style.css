@@ -1003,3 +1003,13 @@
         width: 100%;
     }
 }
+
+/*FOOTER----------------------------------------------------------*/
+@media all{
+    footer{
+        background-color: #00052e;
+        color: aliceblue;
+        width: 100vw;
+        height: 20vh;
+    }
+}
