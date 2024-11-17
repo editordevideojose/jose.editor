@@ -1004,6 +1004,51 @@
     }
 }
 
+/*PANTALLA 14: SOLICITUD CLIENTE----------------------------------------------------------*/
+@media all{
+    #section20{
+        width: 100%;
+        height: auto;
+        h6{
+            background-color: yellow;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+        }
+        h4{
+            color: #818181;
+            text-align: center;
+        }
+        .btnTarjetas{
+            width: 70%;
+            margin: 10px;
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            background-color: #0012b4;
+            color: aliceblue;
+        }
+        #accordionTarjetas{
+            width: 80%;
+        }
+    }
+
+    #accordion-contentTarjetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .listaIncluye{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
 /*FOOTER----------------------------------------------------------*/
 @media all{
     footer{
