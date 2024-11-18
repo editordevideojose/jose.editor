@@ -1004,54 +1004,131 @@
     }
 }
 
-/*PANTALLA 14: SOLICITUD CLIENTE----------------------------------------------------------*/
+/*PANTALLA xxx: TARJETAS NUEVAS----------------------------------------------------------*/
 @media all{
-    #section20{
+    .contenedorSubtitulo {
         width: 100%;
-        height: auto;
-        h6{
-            background-color: yellow;
-            width: 100%;
-            text-align: center;
+    }
+    
+    .accordion-container {
+        width: 80%;
+        margin: auto;
+        h6 {
+            background-color: rgb(255, 213, 0);
             padding: 5px;
-        }
-        h4{
-            color: #818181;
             text-align: center;
         }
-        .btnTarjetas{
-            width: 70%;
-            margin: 10px;
-            padding: 8px;
-            border: none;
-            border-radius: 10px;
-            background-color: #0012b4;
-            color: aliceblue;
+    
+        h3 {
+            margin: 0 auto;
         }
-        #accordionTarjetas{
-            width: 80%;
+        p{
+            font-size: 80%;
         }
     }
+    
+    .accordion-card {
+        background-color: aqua;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        overflow: hidden;
+        width: 100%;
+        filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 
-    #accordion-contentTarjetas {
+    }
+    
+    .accordion-card-header {
+        background-color: #003ec3;
+        padding: 25px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        
+        cursor: pointer;
+        transition: background-color 0.3s;
+        justify-content: space-between;
+        flex-direction: row;
     }
-
-    .listaIncluye{
+    
+    .accordion-card-header.active {
+        background-color: #003ec3;
+        color: #fff;
+    }
+    
+    .accordion-card-content {
+        max-height: 0;
+        height: auto;
+        overflow: hidden;
+        background-color: #dedede;
+        transition: max-height 0.3s ease, padding 0.3s ease;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .accordion-card-content.show {
+        max-height: 500px;
+        padding: 15px;
+    }
+    
+    .accordion-list {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        padding: 0;
+    }
+    
+    .contenedorBtn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .accordion-toggle-btn{
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: aliceblue;
+    }
+    
+    .accordion-action-btn {
+        width: 70%;
+        margin-bottom: 20px;
+        padding: 8px;
+        border: none;
+        border-radius: 10px;
+        background-color: #0044ff;
+        color: aliceblue;
+        text-align: center;
+    }
+    
+    
+    .accordion-toggle-btn .accordion-arrow {
+        transition: transform 0.3s;
+    }
+    
+    .accordion-card-header.active .accordion-arrow {
+        transform: rotate(90deg);
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER----------------------------------------------------------*/
-@media all{
-    footer{
+@media all {
+    footer {
         background-color: #00052e;
         color: aliceblue;
         width: 100vw;

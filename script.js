@@ -18,6 +18,38 @@ headers.forEach(header => {
     });
 });
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const accordionHeaders = document.querySelectorAll(".accordion-card-header");
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener("click", () => {
+            const content = header.nextElementSibling;
+
+            // Alternar la clase activa en el header
+            header.classList.toggle("active");
+
+            // Mostrar o colapsar el contenido
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null; // Colapsar
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px"; // Expandir
+            }
+        });
+    });
+});
+
+    
+
+
+
+
+
+
+
+
 //RESEÑAS---------------------------------------------------------------------------------
 let index = 0;
 const reseñas = document.querySelectorAll('.reseña');
