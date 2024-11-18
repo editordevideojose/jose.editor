@@ -1005,31 +1005,34 @@
 }
 
 /*PANTALLA xxx: TARJETAS NUEVAS----------------------------------------------------------*/
-@media all{
+@media all {
     .contenedorSubtitulo {
         width: 100%;
     }
-    
+
     .accordion-container {
         width: 80%;
         margin: auto;
+
         h6 {
             background-color: rgb(255, 213, 0);
             padding: 5px;
             text-align: center;
         }
-    
+
         h3 {
             margin: 0 auto;
         }
-        p{
+
+        p {
             font-size: 80%;
         }
-        h4{
+
+        h4 {
             color: #5f5f5f;
         }
     }
-    
+
     .accordion-card {
         background-color: aqua;
         border: 1px solid #dddddd;
@@ -1040,13 +1043,14 @@
         filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
 
     }
-    
+
     .tituloyBtn {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-between;
     }
+
     .accordion-card-header {
         background-color: #003ec3;
         padding: 20px 25px 0px 25px;
@@ -1056,56 +1060,77 @@
         transition: background-color 0.3s;
         justify-content: space-between;
         flex-direction: column;
-        video{
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            margin-top: 10px;
-        }
+        position: relative;
+        margin: 0;
+        display: inline-block;
     }
-    
+
+    .videoYbtn {
+        position: relative;
+        width: 100%;
+    }
+
+    video {
+        display: block; /* Elimina espacios extra */
+        margin: 0 auto; /* Centra el video horizontalmente */
+        width: 90%; /* O el tamaño que prefieras */
+        height: auto; /* Mantén la proporción del video */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        z-index: 1;
+    }
+
     .accordion-card-header.active {
         background-color: #003ec3;
         color: #fff;
     }
-    
+
     .accordion-card-content {
         max-height: 0;
         height: auto;
         overflow: hidden;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(172,172,172,1) 100%);        transition: max-height 0.3s ease, padding 0.3s ease;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(172, 172, 172, 1) 100%);
+        transition: max-height 0.3s ease, padding 0.3s ease;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
     }
-    
+
     .accordion-card-content.show {
         max-height: 500px;
         padding: 15px;
     }
-    
+
     .accordion-list {
         display: flex;
         flex-direction: column;
         margin: 20px 20px;
         padding: 0;
     }
-    
+
     .contenedorBtn {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    
-    .accordion-toggle-btn{
+
+    .accordion-toggle-btn {
+        position: absolute;
+        bottom: 20px; /* Lo sube 20px desde el borde inferior */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translateX(-50%);
+        z-index: 2;
         padding: 10px 20px;
         border: none;
         border-radius: 20px;
-        background-color: aliceblue;
+        background-color: #ececec; /* Fondo del botón */
+        color: rgb(0, 0, 123); /* Color del texto */
+        cursor: pointer;
+        text-align: center;
     }
-    
+
     .accordion-action-btn {
         width: 70%;
         margin-bottom: 20px;
@@ -1116,14 +1141,21 @@
         color: aliceblue;
         text-align: center;
     }
-    
-    
+
+
     .accordion-toggle-btn .accordion-arrow {
         transition: transform 0.3s;
     }
-    
+
     .accordion-card-header.active .accordion-arrow {
         transform: rotate(90deg);
+    }
+
+    .accordion-card-header,
+    video,
+    .accordion-toggle-btn {
+        box-sizing: border-box;
+        /* Asegura que los bordes y padding no afecten dimensiones */
     }
 }
 
