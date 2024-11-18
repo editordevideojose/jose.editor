@@ -1025,6 +1025,9 @@
         p{
             font-size: 80%;
         }
+        h4{
+            color: #5f5f5f;
+        }
     }
     
     .accordion-card {
@@ -1040,7 +1043,7 @@
     
     .accordion-card-header {
         background-color: #003ec3;
-        padding: 25px;
+        padding: 20px 25px;
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -1058,8 +1061,8 @@
         max-height: 0;
         height: auto;
         overflow: hidden;
-        background-color: #dedede;
-        transition: max-height 0.3s ease, padding 0.3s ease;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(172,172,172,1) 100%);        transition: max-height 0.3s ease, padding 0.3s ease;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1085,7 +1088,7 @@
     }
     
     .accordion-toggle-btn{
-        padding: 10px;
+        padding: 10px 20px;
         border: none;
         border-radius: 20px;
         background-color: aliceblue;
