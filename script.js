@@ -41,6 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+//PARA REPRODUCIR VIDEO EN MOBILE AUTOMATICAMENTE:
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('video');
+    video.muted = true; // Asegúrate de que esté silenciado
+    video.play().catch(error => {
+        console.log("El navegador bloqueó la reproducción automática:", error);
+    });
+});
+
     
 
 

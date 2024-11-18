@@ -1070,14 +1070,26 @@
         width: 100%;
     }
 
-    video {
-        display: block; /* Elimina espacios extra */
-        margin: 0 auto; /* Centra el video horizontalmente */
-        width: 90%; /* O el tamaño que prefieras */
-        height: auto; /* Mantén la proporción del video */
+    /* video {
+        display: block; 
+        margin: 0 auto;
+        width: 90%; 
+        height: auto; 
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         z-index: 1;
+    } */
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 90%; /* Ajusta según el diseño */
+        height: auto; /* Mantiene la relación de aspecto */
+        border: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        z-index: 1;
+        
     }
 
     .accordion-card-header.active {
