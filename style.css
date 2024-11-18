@@ -1041,15 +1041,27 @@
 
     }
     
+    .tituloyBtn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
     .accordion-card-header {
         background-color: #003ec3;
-        padding: 20px 25px;
+        padding: 20px 25px 0px 25px;
         display: flex;
         align-items: center;
         cursor: pointer;
         transition: background-color 0.3s;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
+        video{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-top: 10px;
+        }
     }
     
     .accordion-card-header.active {
