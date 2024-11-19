@@ -1074,26 +1074,16 @@
         width: 100%;
     }
 
-    /* video {
-        display: block; 
-        margin: 0 auto;
-        width: 90%; 
-        height: auto; 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        z-index: 1;
-    } */
-
     iframe {
         display: block;
         margin: 0 auto;
-        width: 90%; /* Ajusta según el diseño */
-        height: auto; /* Mantiene la relación de aspecto */
+        width: 90%; 
+        height: auto; 
         border: none;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         z-index: 1;
-        
+        pointer-events: none;
     }
 
     .accordion-card-header.active {
