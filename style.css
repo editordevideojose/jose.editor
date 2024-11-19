@@ -1006,6 +1006,10 @@
 
 /*PANTALLA xxx: TARJETAS NUEVAS----------------------------------------------------------*/
 @media all {
+    #main-section{
+        width: 100%;
+        height: auto;
+    }
     .contenedorSubtitulo {
         width: 100%;
     }
@@ -1025,7 +1029,7 @@
         }
 
         p {
-            font-size: 80%;
+            font-size: 75%;
         }
 
         h4 {
@@ -1037,7 +1041,7 @@
         background-color: aqua;
         border: 1px solid #dddddd;
         border-radius: 10px;
-        margin-bottom: 8px;
+        margin: 60px 0px;
         overflow: hidden;
         width: 100%;
         filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
