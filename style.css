@@ -1067,6 +1067,7 @@
         position: relative;
         margin: 0;
         display: inline-block;
+        width: 100%;
     }
 
     .videoYbtn {
@@ -1102,6 +1103,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        width: 100%;
     }
 
     .accordion-card-content.show {
