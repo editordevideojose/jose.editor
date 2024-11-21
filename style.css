@@ -145,14 +145,20 @@
         color: aliceblue;
         text-align: center;
 
-        h4 {
-            /* margin-bottom: 15px; */
+        .h4copy {
+            color: gold;
+            font-weight: 600;
+            font-size: 130%;
         }
 
         h5 {
-            color: #9c2bfe;
+            color: #000069;
             padding: 1px 0px 1px 0px;
             background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 70px;
         }
     }
 }
@@ -829,6 +835,10 @@
         background-color: aliceblue;
         font-size: 80%;
     }
+    .linksAcordion{
+        text-decoration: underline;
+        font-weight: 600;
+    }
 }
 
 /*PANTALLA 11: FORMULARIO----------------------------------------------------------------*/
@@ -864,6 +874,8 @@
         align-items: flex-start;
         color: aliceblue;
         margin-top: 40px;
+        filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.5));
+
     }
 
     .label {
