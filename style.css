@@ -138,6 +138,25 @@
     }
 }
 
+/*PANTALLA 1BIS: COPY VENDEDOR----------------------------------------------------------------*/
+@media all {
+    .copyVendedor {
+        width: 80%;
+        color: aliceblue;
+        text-align: center;
+
+        h4 {
+            /* margin-bottom: 15px; */
+        }
+
+        h5 {
+            color: #9c2bfe;
+            padding: 1px 0px 1px 0px;
+            background-color: aliceblue;
+        }
+    }
+}
+
 /*PANTALLA 2: QUIEN SOY----------------------------------------------------------------*/
 @media all {
     .quienSoy {
@@ -437,6 +456,31 @@
         bottom: 10%;
         z-index: 3;
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    }
+}
+
+/*PANTALLA 1BIS: COPY VENDEDOR----------------------------------------------------------------*/
+@media all {
+    .copyVendedor2 {
+        width: 80%;
+        color: aliceblue;
+        text-align: center;
+
+        h3 {
+            color: gold;
+            font-size: 150%;
+        }
+
+        .h4subrayado {
+            text-decoration: underline;
+            text-decoration-color: #ff5722;
+            /* Cambia a tu color preferido */
+            text-decoration-thickness: 3px;
+        }
+
+        h5 {
+            color: #9c2bfe;
+        }
     }
 }
 
@@ -1006,10 +1050,11 @@
 
 /*PANTALLA xxx: TARJETAS NUEVAS----------------------------------------------------------*/
 @media all {
-    #main-section{
+    #main-section {
         width: 100%;
         height: auto;
     }
+
     .contenedorSubtitulo {
         width: 100%;
     }
@@ -1078,8 +1123,8 @@
     iframe {
         display: block;
         margin: 0 auto;
-        width: 90%; 
-        height: auto; 
+        width: 90%;
+        height: auto;
         border: none;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -1126,15 +1171,19 @@
 
     .accordion-toggle-btn {
         position: absolute;
-        bottom: 20px; /* Lo sube 20px desde el borde inferior */
-        left: 50%; /* Centrado horizontalmente */
+        bottom: 20px;
+        /* Lo sube 20px desde el borde inferior */
+        left: 50%;
+        /* Centrado horizontalmente */
         transform: translateX(-50%);
         z-index: 2;
         padding: 10px 20px;
         border: none;
         border-radius: 20px;
-        background-color: #ececec; /* Fondo del botón */
-        color: rgb(0, 0, 123); /* Color del texto */
+        background-color: #ececec;
+        /* Fondo del botón */
+        color: rgb(0, 0, 123);
+        /* Color del texto */
         cursor: pointer;
         text-align: center;
     }
@@ -1167,20 +1216,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER----------------------------------------------------------*/
 @media all {
     footer {
@@ -1193,46 +1228,56 @@
         justify-content: center;
         align-items: center;
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
-        p{
+
+        p {
             font-size: 70%;
             text-align: center;
         }
+
         .contenedorLogo {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .logosFooter {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 25px;
-            img{
+
+            img {
                 width: 5%;
                 margin-inline: 3px;
             }
         }
-        .logoSatmedia{
+
+        .logoSatmedia {
             width: 10%;
             margin: 10px 0px 35px 0px;
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
 
         }
-        .contacto{
+
+        .contacto {
             background-color: #5f5f5f;
             margin-top: 35px;
-            padding: 0px  3px;
+            padding: 0px 3px;
 
         }
-        .contactateLink{
+
+        .contactateLink {
             color: #5f5f5f;
         }
-        .linea{
+
+        .linea {
             width: 40%;
-            height: 1px; /* Grosor de la línea */
+            height: 1px;
+            /* Grosor de la línea */
             border: solid 0.5px red;
-            background-color: #ffffff; /* Color de la línea */
-            margin: 0px 0px 15px 0px ;
+            background-color: #ffffff;
+            /* Color de la línea */
+            margin: 0px 0px 15px 0px;
         }
     }
 }
