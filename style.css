@@ -34,6 +34,62 @@
         border-bottom: solid 1px aliceblue;
     }
 
+    /* Contenedor de la cinta */
+.offer-container {
+    display: flex;
+    width: 100%;
+    height: 30px; /* Reducido el alto del contenedor */
+    overflow: hidden; /* Oculta el contenido que se sale */
+    background-color: #333; /* Fondo inicial oscuro */
+    position: relative;
+    animation: blinkEffect 1s step-start infinite; /* Animación de parpadeo para el fondo */
+  }
+  
+  /* Texto que se mueve */
+  .offer-text {
+    display: inline-block;
+    white-space: nowrap; /* Evita el salto de línea */
+    font-size: 14px; /* Reducido el tamaño del texto */
+    color: white; /* Color inicial del texto */
+    padding: 5px 10px; /* Ajuste del espacio alrededor del texto */
+    animation: scrollText 5s linear infinite, changeTextColor 1s step-start infinite; /* Animaciones del texto */
+  }
+  
+  /* Animación para el desplazamiento horizontal */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Comienza fuera de la pantalla por la derecha */
+    }
+    100% {
+      transform: translateX(-100%); /* Termina fuera de la pantalla por la izquierda */
+    }
+  }
+  
+  /* Efecto de parpadeo de color tanto para el texto como para el fondo */
+  @keyframes blinkEffect {
+    0%, 100% {
+      background-color: #333; /* Fondo oscuro */
+    }
+    50% {
+      background-color: yellow; /* Fondo cambia a amarillo */
+    }
+  }
+  
+  /* Cambiar color del texto mientras parpadea */
+  @keyframes changeTextColor {
+    0%, 100% {
+      color: white; /* Color del texto */
+    }
+    50% {
+      color: red; /* El texto cambia a rojo */
+    }
+  }
+  
+  
+  
+  
+  
+
     .logo {
         width: 100%;
         height: 8%;
@@ -162,7 +218,8 @@
             align-items: center;
             margin: 0px 70px;
         }
-        .h4titulo{
+
+        .h4titulo {
             font-weight: 400;
         }
     }
@@ -251,10 +308,12 @@
 
         p {
             color: #9c2bfe;
+            font-size: 80%;
         }
 
         img {
-            width: 20%;
+            width: 20px;
+            /* Tamaño reducido */
             margin-bottom: 8px;
             filter: drop-shadow(0 0 11px #c485fc);
         }
@@ -262,78 +321,60 @@
 
     .miProceso {
         display: flex;
-        width: 80%;
-        height: 50%;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
         align-items: center;
+        gap: 16px;
+        /* Espaciado uniforme */
+        width: 80%;
     }
+
     .proceso {
-        /* margin-bottom: 4px; */
         color: aliceblue;
         display: flex;
-        width: 50%;
-        height: 33.33%;
-        background-color: rgb(0, 1, 56);
-        border-radius: 10px;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         text-align: center;
+        width: 130px;
+        /* Tamaño reducido */
+        height: 120px;
+        background-color: rgb(0, 1, 56);
+        border-radius: 10px;
         filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
-        p {
-            font-weight: 400;
-            font-size: 80%;
-            margin: 0 auto;
-        }
     }
 
     .columns {
-        width: 100%;
-        height: 66.66%;
         display: flex;
-        flex-direction: row;
+        gap: 16px;
+        /* Espaciado uniforme entre columnas */
+        width: 100%;
         justify-content: center;
-        align-items: center;
     }
 
     .colUno {
-        width: 50%;
-        height: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        /* margin-inline: -6px; */
-        /* margin-top: -32px; */
+        gap: 16px;
+        /* Espaciado uniforme entre los cuadros */
     }
 
     .procesoCol {
-        /* margin-bottom: 10px; */
         color: aliceblue;
         display: flex;
-        width: 85%;
-        height: 38%;
-        background-color: rgb(0, 1, 56);
-        border-radius: 10px;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         text-align: center;
+        width: 130px;
+        /* Tamaño reducido */
+        height: 120px;
+        background-color: rgb(0, 1, 56);
+        border-radius: 10px;
         filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
-
-        p {
-            font-weight: 400;
-            font-size: 70%;
-            margin: 0 auto;
-        }
     }
 }
+
+
 
 /*PANTALLA 4: CONTRATA EN 3 PASOS----------------------------------------------------------------*/
 @media all {
@@ -357,7 +398,7 @@
         position: relative;
         width: 100%;
         height: 17%;
-        margin: 20px 0;
+        margin: 15px 0;
         border-radius: 40px;
         border: solid 2px rgb(170, 145, 0);
         background-color: rgb(24, 0, 84);
@@ -373,7 +414,7 @@
         font-size: 90%;
     }
 
-    .tresTituloPasos{
+    .tresTituloPasos {
         color: gold;
         text-decoration: underline;
     }
@@ -411,8 +452,8 @@
         z-index: 0;
     }
 
-    #main-section{
-        h2{
+    #main-section {
+        h2 {
             margin-top: 60px;
         }
     }
@@ -806,7 +847,7 @@
         align-items: center;
     }
 
-    .faqsTitulo{
+    .faqsTitulo {
         margin-bottom: 40px;
     }
 
