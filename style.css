@@ -149,16 +149,21 @@
             color: gold;
             font-weight: 600;
             font-size: 130%;
+            margin-top: -5px;
         }
 
         h5 {
             color: #000069;
+            border-radius: 5px;
             padding: 1px 0px 1px 0px;
             background-color: aliceblue;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0px 70px;
+        }
+        .h4titulo{
+            font-weight: 400;
         }
     }
 }
@@ -346,17 +351,17 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        color: #6c00ca;
+        color: aliceblue;
     }
 
     .paso {
-        position: relative; /* Necesario para posicionar el número */
+        position: relative;
         width: 100%;
-        height: 16%; /* Ajusta la altura si es necesario */
-        margin: 20px 0; /* Espaciado entre los pasos */
+        height: 14%;
+        margin: 20px 0;
         border-radius: 40px;
-        border: solid 2px rgb(108, 0, 202);
-        background-color: rgb(217, 217, 217);
+        border: solid 2px rgb(170, 145, 0);
+        background-color: rgb(24, 0, 84);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -365,32 +370,39 @@
     }
 
     .paso h3 {
-        margin: 0 auto;
         font-weight: 500;
         font-size: 90%;
     }
 
+    .tresTituloPasos{
+        color: gold;
+        text-decoration: underline;
+    }
+
     .numeroPaso {
         position: absolute;
-        top: -20px; /* Ajusta la posición vertical */
-        left: 50%; /* Centra horizontalmente */
-        transform: translateX(-50%); /* Corrige el centrado exacto */
-        width: 40px; /* Tamaño reducido en un 20% */
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%; /* Forma circular */
-        background-color: rgb(108, 0, 202);
+        border-radius: 50%;
+        background-color: rgb(232, 197, 1);
         color: rgb(250, 240, 255);
-        font-size: 16px; /* Tamaño de texto reducido proporcionalmente */
+        font-size: 16px;
         font-weight: 600;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     .accionPaso {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         text-align: center;
-        padding-top: 20px; /* Espaciado respecto al contenido */
     }
 }
 
@@ -485,8 +497,8 @@
         .h4subrayado {
             text-decoration: underline;
             text-decoration-color: #ff5722;
-            /* Cambia a tu color preferido */
             text-decoration-thickness: 3px;
+            font-weight: 500;
         }
 
         h5 {
@@ -842,11 +854,13 @@
         background-color: aliceblue;
         font-size: 80%;
     }
-    .linksAcordion{
+
+    .linksAcordion {
         text-decoration: underline;
         font-weight: 600;
     }
-    .respuestaNegrita{
+
+    .respuestaNegrita {
         font-weight: 600;
     }
 }
