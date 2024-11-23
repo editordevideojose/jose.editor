@@ -39,7 +39,7 @@
         overflow: hidden; /* Oculta el contenido que se sale del área visible */
         position: relative;
         background-color: rgb(255, 238, 0);
-        padding: 5px;
+        padding: 3px;
         span{
             font-size: 90%;
         }
