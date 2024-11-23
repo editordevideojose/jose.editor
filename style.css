@@ -506,6 +506,8 @@
         z-index: 3;
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
     }
+    .accordion-toggle-btn{
+    }
 }
 
 /*PANTALLA 1BIS: COPY VENDEDOR----------------------------------------------------------------*/
@@ -1244,7 +1246,7 @@
         /* Centrado horizontalmente */
         transform: translateX(-50%);
         z-index: 2;
-        padding: 10px 20px;
+        padding: 8px;
         border: none;
         border-radius: 20px;
         background-color: #ececec;
