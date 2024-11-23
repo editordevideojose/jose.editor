@@ -54,6 +54,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const marqueeTrack = document.querySelector('.marquee-track');
+marqueeTrack.innerHTML += marqueeTrack.innerHTML;  // Duplicar contenido dinámicamente
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
