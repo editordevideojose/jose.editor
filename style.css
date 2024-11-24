@@ -494,6 +494,10 @@
 
     }
 
+    #acordion-card1{
+        overflow:visible;
+    }
+
     .tituloyBtn {
         display: flex;
         width: 100%;
@@ -610,8 +614,7 @@
     }
 
     .video1 {
-        width: 100%; /* Ajusta al 100% del contenedor */
-        height: 40%;
+        width: 40%;
         margin: 0 auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
