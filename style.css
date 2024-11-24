@@ -437,6 +437,9 @@
     #main-section {
         width: 100%;
         height: auto;
+        h2{
+            margin-top: 40px;
+        }
     }
 
     .contenedorSubtitulo {
@@ -579,7 +582,7 @@
         padding: 8px;
         border: none;
         border-radius: 10px;
-        background-color: #0044ff;
+        background-color: #003ec3;
         color: aliceblue;
         text-align: center;
     }
@@ -590,6 +593,15 @@
     .accordion-toggle-btn {
         box-sizing: border-box;
         /* Asegura que los bordes y padding no afecten dimensiones */
+    }
+
+    .video1{
+        width: 40%;
+        margin: 0 auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        overflow: hidden;
     }
 }
 
