@@ -564,13 +564,13 @@
         padding: 8px;
         border: none;
         border-radius: 20px;
-        background-color: #000000;
+        background-color: #0026a2;
         /* Fondo del botón */
         color: aliceblue;
         /* Color del texto */
         cursor: pointer;
         text-align: center;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .accordion-action-btn {
@@ -584,14 +584,6 @@
         text-align: center;
     }
 
-
-    .accordion-toggle-btn .accordion-arrow {
-        transition: transform 0.3s;
-    }
-
-    .accordion-card-header.active .accordion-arrow {
-        transform: rotate(90deg);
-    }
 
     .accordion-card-header,
     video,
