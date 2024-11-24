@@ -407,9 +407,11 @@
     .paso h3 {
         font-weight: 500;
         font-size: 90%;
-        margin: 0; /* Asegurarse de que no hay márgenes adicionales */
-        text-align: center; /* Garantizar el centrado del texto */
+        margin: 0; /* Elimina márgenes externos */
+        padding: 0; /* Elimina relleno interno */
+        text-align: center; /* Centra el texto horizontalmente */
     }
+    
     
 
     .tresTituloPasos {
@@ -612,7 +614,7 @@
         margin: 0 auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        display: flex;
+        /* display: flex; */
     }
 }
 
