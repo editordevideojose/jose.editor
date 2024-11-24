@@ -540,6 +540,7 @@
     #acordionCardHeader1 {
         border: solid rgb(225, 0, 255);
         width: 100%;
+        display: flex;
     }
 
     .videoYbtn {
@@ -555,7 +556,11 @@
         justify-content: center;
         overflow: hidden;
         width: 100%;
+        height: auto;
         border: solid green;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
     }
 
     iframe {
