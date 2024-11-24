@@ -358,7 +358,13 @@
     }
     #entrega{
         color: gold;
-    }  
+    }
+    #fase1{
+        border: solid 2px #9C2DFE;
+    }
+    #reunion{
+        color: #c787ff;
+    } 
       
 }
 
@@ -383,7 +389,7 @@
     .paso {
         position: relative;
         width: 100%;
-        height: 17%;
+        height: 13%;
         margin: 15px 0;
         border-radius: 40px;
         border: solid 2px rgb(170, 145, 0);
@@ -398,6 +404,8 @@
     .paso h3 {
         font-weight: 500;
         font-size: 90%;
+        display: flex;
+        justify-content: center;
     }
 
     .tresTituloPasos {
@@ -601,7 +609,6 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         display: flex;
-        overflow: hidden;
     }
 }
 
