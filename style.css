@@ -567,7 +567,7 @@
         padding: 8px;
         border: none;
         border-radius: 20px;
-        background-color: #0026a2;
+        background-color: #003FC3;
         /* Fondo del botón */
         color: aliceblue;
         /* Color del texto */
@@ -582,7 +582,7 @@
         padding: 8px;
         border: none;
         border-radius: 10px;
-        background-color: #003ec3;
+        background-color: #003FC3;
         color: aliceblue;
         text-align: center;
     }
