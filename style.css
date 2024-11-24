@@ -538,7 +538,6 @@
     }
 
     #acordionCardHeader1 {
-        border: solid rgb(225, 0, 255);
         width: 100%;
         display: flex;
     }
@@ -557,7 +556,6 @@
         overflow: hidden;
         width: 100%;
         height: auto;
-        border: solid green;
         margin: 0;
         padding: 0;
         background-color: transparent;
@@ -592,7 +590,6 @@
         flex-wrap: nowrap;
         align-items: center;
         width: 100%;
-        border: solid rgb(255, 140, 0);
     }
 
     .accordion-card-content.show {
@@ -655,7 +652,6 @@
         object-fit: contain;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
-        border: solid red;
     }
 
 }
