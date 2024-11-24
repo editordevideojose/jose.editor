@@ -553,7 +553,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        overflow: visible;
+        overflow: hidden;
         width: 100%;
     }
 
@@ -654,14 +654,6 @@
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
-
-    /* .accordion-card-header {
-        overflow: visible;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } */
 
 }
 
