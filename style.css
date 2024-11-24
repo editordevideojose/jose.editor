@@ -555,8 +555,10 @@
     #videoYbtn1 {
         display: flex;
         flex-direction: column;
-        /* Apila elementos */
         align-items: center;
+        justify-content: center;
+        overflow: visible;
+        width: 100%;
     }
 
     iframe {
@@ -648,26 +650,20 @@
     }
 
     .video1 {
-        width: 40%; /* Se ajusta al ancho del contenedor */
-        max-width: 600px; /* Tamaño máximo para pantallas grandes */
-        height: auto; /* Mantiene la proporción del video */
-        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        object-fit: contain;
         display: block;
-        object-fit: contain; /* Asegura que no se recorte */
         border-radius: 10px;
     }
 
     .accordion-card-header {
-        overflow: visible; /* Asegura que no se oculte contenido */
-        position: relative;
-        text-align: center; /* Centra el contenido */
-    }
-
-    @media screen and (max-width: 768px) {
-        .video1 {
-            width: 40%; /* Más espacio en dispositivos pequeños */
-            height: auto;
-        }
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
