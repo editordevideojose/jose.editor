@@ -1399,6 +1399,8 @@
         .logoSatmedia {
             width: 10%;
             margin: 10px 0px 35px 0px;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+
         }
 
         .contacto {
