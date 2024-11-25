@@ -1384,12 +1384,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
             img {
                 width: 5%;
                 margin-inline: 3px;
             }
+            .logo-ig{
+                width: 10%;
+                margin: 0;
+                padding: 0;
+            }
         }
+
+        
 
         .logoSatmedia {
             width: 10%;
@@ -1400,7 +1407,6 @@
 
         .contacto {
             margin: 5px 0px 10px 0px;
-            padding: 0px 3px;
             font-style: italic;
         }
 
