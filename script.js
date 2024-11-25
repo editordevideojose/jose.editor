@@ -1,3 +1,22 @@
+// Selecciona idioma:
+function selectLanguage(language) {
+    console.log("Idioma seleccionado:", language);
+
+    // Oculta el modal
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+
+    // Muestra el contenido del sitio y quita el desenfoque
+    const content = document.querySelector('.site-content');
+    content.classList.add('active');
+
+    // Habilita el scroll en la página
+    document.body.style.overflow = 'auto';
+}
+
+
+
+
 // Selecciona todos los elementos de cabecera del acordeón
 const headers = document.querySelectorAll('.accordion-header');
 
