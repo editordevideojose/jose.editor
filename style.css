@@ -1384,7 +1384,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             img {
                 width: 5%;
                 margin-inline: 3px;
