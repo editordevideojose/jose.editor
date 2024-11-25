@@ -44,24 +44,28 @@
     
     .modal-content {
         width: 70%;
-        background: #fff;
+        background: #e1e1e1;
         border-radius: 10px;
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: center;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) grayscale(100%) sepia(100%) hue-rotate(180deg);
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 
     }
     
     .modal-content h2 {
-        margin: 0 0 10px;
+        margin: 40px 10px 10px 10px;
         color: #000069;
+    }
+
+    .modal-content p {
+        font-size: 80%;
     }
     
     .lang-button {
         margin: 10px;
-        padding: 10px 20px;
-        background-color: #007BFF;
+        padding: 5px 8px;
+        background-color: #000069;
         color: white;
         border: none;
         border-radius: 5px;
@@ -89,6 +93,10 @@
         height: auto;
         filter: none; /* Quita el desenfoque */
         opacity: 1; /* Restaura la visibilidad */
+    }
+    .englishCopy{
+        font-style: italic;
+        color: #5e5e5e;
     }
     
 }
