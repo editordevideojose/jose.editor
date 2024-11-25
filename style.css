@@ -1422,11 +1422,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
 
             img {
                 width: 5%;
-                margin-inline: 3px;
+                margin-inline: 5px;
             }
 
             .logo-ig {
