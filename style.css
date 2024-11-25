@@ -24,25 +24,26 @@
 }
 
 /*PANTALLA 0: MODAL*/
-@media all{
+@media all {
     /* .contenedorModal {
         width: 100vw;
         height: 100vh;
     } */
-    
+
     .modal {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.8); /* Oscurece el fondo */
+        background: rgba(0, 0, 0, 0.8);
+        /* Oscurece el fondo */
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1000;
     }
-    
+
     .modal-content {
         width: 70%;
         background: #e1e1e1;
@@ -53,7 +54,7 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 
     }
-    
+
     .modal-content h2 {
         margin: 10px;
         color: #000069;
@@ -62,7 +63,7 @@
     .modal-content p {
         font-size: 80%;
     }
-    
+
     .lang-button {
         margin: 10px;
         padding: 5px 8px;
@@ -73,48 +74,55 @@
         cursor: pointer;
         font-size: 16px;
     }
-    
+
     .lang-button:hover {
         background-color: #0056b3;
     }
-    
+
     /* .site-content {
         display: none;
         width: 100vw;
         height: auto;
     } */
-    
+
     .site-content {
-        filter: blur(5px); /* Aplica el desenfoque al contenido visible */
+        filter: blur(5px);
+        /* Aplica el desenfoque al contenido visible */
         transition: filter 0.3s ease, opacity 0.3s ease;
     }
-    
+
     .site-content.active {
         width: 100vw;
         height: auto;
-        filter: none; /* Quita el desenfoque */
-        opacity: 1; /* Restaura la visibilidad */
+        filter: none;
+        /* Quita el desenfoque */
+        opacity: 1;
+        /* Restaura la visibilidad */
     }
-    .englishCopy{
+
+    .englishCopy {
         font-style: italic;
         color: #5e5e5e;
     }
-    .contenedorLogoModal{
+
+    .contenedorLogoModal {
         width: 100%;
         margin: 0;
         display: flex;
         justify-content: center;
-        
+
     }
-    .logoImgModal{
+
+    .logoImgModal {
         width: 10%;
         margin: 0;
         left: 50%;
     }
-    .hi{
+
+    .hi {
         font-style: italic;
     }
-    
+
 }
 
 /*PANTALLA 1: INICIO----------------------------------------------------------------*/
@@ -290,10 +298,11 @@
             font-weight: 600;
             font-size: 130%;
             margin-top: -5px;
+
         }
 
         h5 {
-            color: #000069;
+            color: #0000ce;
             border-radius: 5px;
             padding: 1px 0px 1px 0px;
             background-color: aliceblue;
@@ -301,10 +310,14 @@
             justify-content: center;
             align-items: center;
             margin: 0px 70px;
+            filter: drop-shadow(0 0 10px rgb(255, 221, 0));
+
         }
 
         .h4titulo {
             font-weight: 400;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+
         }
     }
 }
@@ -319,9 +332,12 @@
         justify-content: center;
         align-items: center;
         background-color: #000e8d;
+        /* border: solid 2px rgb(0, 0, 81); */
         border-radius: 10px;
         margin-bottom: 30px;
         padding: 10px;
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+
     }
 
     .imgFlecha {
@@ -336,6 +352,8 @@
         font-weight: 200;
         color: aliceblue;
         margin: 0;
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+
     }
 
     .quienSoy .soyJose {
@@ -347,16 +365,20 @@
     .quienSoy h3 {
         font-size: 5vw;
         font-weight: 600;
-        color: rgb(90, 90, 90);
-        color: #000c7a;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+        color: #000083;
+        background-color: gold;
         margin: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        /* filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)); */
+
     }
 
     .quienSoy p {
-        font-weight: 600;
-        font-size: 80%;
-        color: rgba(255, 204, 0, 0.853);
+        font-weight: 500;
+        font-size: 85%;
+        color: aliceblue;
         line-height: 1.6;
         text-align: center;
         width: 80%;
@@ -374,6 +396,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .convertir {
+        font-weight: 600;
+        color: gold;
+
     }
 }
 
@@ -579,6 +607,7 @@
     .accordion-container {
         width: 80%;
         margin: auto;
+
         h6 {
             background-color: rgb(255, 213, 0);
             padding: 5px;
@@ -761,16 +790,24 @@
             font-size: 150%;
         }
 
+        h4 {
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+
+        }
+
         .h4subrayado {
             text-decoration: underline;
             text-decoration-color: #ff5722;
             text-decoration-thickness: 3px;
             font-weight: 500;
+            filter: none;
+
         }
 
         h5 {
             color: #9c2bfe;
         }
+
     }
 }
 
@@ -1385,11 +1422,13 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 0px;
+
             img {
                 width: 5%;
                 margin-inline: 3px;
             }
-            .logo-ig{
+
+            .logo-ig {
                 width: 10%;
                 margin: 0;
                 padding: 0;
@@ -1421,11 +1460,14 @@
             background-color: #ffffff;
             margin: 0px 0px 15px 0px;
         }
-        .copyright{
+
+        .copyright {
             font-weight: 700;
         }
     }
 }
+
+
 
 
 
