@@ -54,7 +54,7 @@
     }
     
     .modal-content h2 {
-        margin: 40px 10px 10px 10px;
+        margin: 10px;
         color: #000069;
     }
 
@@ -99,7 +99,12 @@
         color: #5e5e5e;
     }
     .logoModal{
+        margin: 0;
+        
+    }
+    .logoImgModal{
         width: 10%;
+        margin: 0;
     }
     
 }
