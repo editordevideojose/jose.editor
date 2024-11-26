@@ -246,6 +246,11 @@
         height: 100%;
         border-radius: 10px;
         overflow: visible;
+        video{
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
     }
 
     .img-container img {
@@ -254,6 +259,7 @@
         object-fit: cover;
         display: block;
         filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+        
     }
 
     /* .overlay {
