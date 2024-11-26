@@ -659,26 +659,25 @@
         <div id="section11" class="screen5">
             <h2>¿Aún tienes dudas?</h2>
             <h2 class="formSubtitulo">Completa el formulario</h2>
-            <form class="form" id="form">
+            <form class="form" id="form" action="https://formsubmit.co/editordevideo.jose@gmail.com" method="POST">
                 <input class="campo" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                 <input class="campo" type="email" name="correo" id="correo" placeholder="Correo" required>
                 <textarea class="campo" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"
                     required></textarea>
                 <div class="checkbox-container">
-                    <input type="checkbox" id="frecuentes">
+                    <input type="checkbox" id="frecuentes" name="leiFaqs">
                     <label for="frecuentes" class="checkbox-label">Leí las preguntas frecuentes</label>
                 </div>
                 <button class="boton" id="enviar" type="submit">Enviar</button>
             </form>
             <!-- Mensaje de agradecimiento -->
-             <div class="mensajeContainer">
+            <div class="mensajeContainer">
                 <div id="mensajeAgradecimiento">
                     <p>¡Gracias por tu mensaje!</p>
                     <p>En 24 hs me comunico contigo.</p>
                     <button id="otraConsulta" class="boton">Nueva consulta</button>
                 </div>
-             </div>
-            
+            </div>
         </div>
         <!-- 12-FINAL LLAMADO A LA ACCION -->
         <div id="section12" class="screen">

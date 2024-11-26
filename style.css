@@ -1290,6 +1290,8 @@
     
     #mensajeAgradecimiento p {
         font-size: 80%;
+        font-weight: 500;
+        font-style: italic;
         color:#000069
     }
 
