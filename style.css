@@ -791,17 +791,20 @@
         }
 
         h4 {
-            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+            font-weight: 500;
 
         }
 
         .h4subrayado {
-            text-decoration: underline;
-            text-decoration-color: #ff5722;
-            text-decoration-thickness: 3px;
-            font-weight: 500;
+            /* text-decoration: underline;
+            text-decoration-color: #a947ff;
+            text-decoration-thickness: 3px; */
+            font-weight: 600;
             filter: none;
-
+            font-size: 130%;
+            margin-top: -4px;
+            color: #9823ff;
         }
 
         h5 {
