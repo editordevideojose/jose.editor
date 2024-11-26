@@ -656,19 +656,28 @@
             </div>
         </div>
         <!-- 11-FORMULARIO -->
-        <div id="section11" class="screen">
+        <div id="section11" class="screen5">
             <h2>¿Aún tienes dudas?</h2>
             <h2 class="formSubtitulo">Completa el formulario</h2>
-            <form class="form" action="">
-                <input class="campo" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input class="campo" type="email" name="correo" id="correo" placeholder="Correo">
-                <textarea class="campo" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+            <form class="form" id="form">
+                <input class="campo" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input class="campo" type="email" name="correo" id="correo" placeholder="Correo" required>
+                <textarea class="campo" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"
+                    required></textarea>
                 <div class="checkbox-container">
                     <input type="checkbox" id="frecuentes">
                     <label for="frecuentes" class="checkbox-label">Leí las preguntas frecuentes</label>
                 </div>
-                <button class="boton" type="submit">Enviar</button>
+                <button class="boton" id="enviar" type="submit">Enviar</button>
             </form>
+            <!-- Mensaje de agradecimiento -->
+             <div class="mensajeContainer">
+                <div id="mensajeAgradecimiento">
+                    <p>Gracias por tu consulta, en 24 hs me comunico contigo.</p>
+                    <button id="otraConsulta" class="boton">Realizar otra consulta</button>
+                </div>
+             </div>
+            
         </div>
         <!-- 12-FINAL LLAMADO A LA ACCION -->
         <div id="section12" class="screen">
@@ -682,20 +691,25 @@
         <!---FOOTER -->
         <footer>
             <div class="logosFooter">
-                <a class="contactateLink" href="mailto:editordevideo.jose@gmail.com?subject=Consulta&body=Hola,%20quisiera%20más%20información.">
+                <a class="contactateLink"
+                    href="mailto:editordevideo.jose@gmail.com?subject=Consulta&body=Hola,%20quisiera%20más%20información.">
                     <img src="img/logos/logo-gmail.png" alt="">
                 </a>
-                <a id="linksFooter" href="https://wa.me/5492604632000?text=Hola,%20quisiera%20más%20información" target="_blank">
-                    <img src="img/logos/logo-wpp.png" alt="" >
+                <a id="linksFooter" href="https://wa.me/5492604632000?text=Hola,%20quisiera%20más%20información"
+                    target="_blank">
+                    <img src="img/logos/logo-wpp.png" alt="">
                 </a>
-                <a id="linksFooter" href="https://wa.me/5492604632000?text=Hola,%20quisiera%20más%20información" target="_blank">
+                <a id="linksFooter" href="https://wa.me/5492604632000?text=Hola,%20quisiera%20más%20información"
+                    target="_blank">
                     <img src="img/logos/logo-ig.png" alt="">
                 </a>
             </div>
             <div class="linea">
             </div>
             <p class="copyright">Copyright® 2024 | 🇦🇷 Argentina</p>
-            <p>¿Necesitas un sitio web? <a class="contactateLink" href="mailto:contacto@gmail.com?subject=Consulta&body=Hola,%20quisiera%20más%20información.">Contáctate</a></p>
+            <p>¿Necesitas un sitio web? <a class="contactateLink"
+                    href="mailto:contacto@gmail.com?subject=Consulta&body=Hola,%20quisiera%20más%20información.">Contáctate</a>
+            </p>
             <div class="contenedorLogo">
                 <p>Desarrollado por</p>
                 <img class="logoSatmedia" src="img/logos/logo-sat-we-media--600x252.png" alt="">

@@ -78,31 +78,6 @@ marqueeTrack.innerHTML += marqueeTrack.innerHTML;  // Duplicar contenido dinámi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-    
-
-
-
-
-
-
-
-
 //RESEÑAS---------------------------------------------------------------------------------
 let index = 0;
 const reseñas = document.querySelectorAll('.reseña');
@@ -136,6 +111,32 @@ function scrollCarousel() {
 
 // Inicia el ciclo de desplazamiento
 scrollCarousel();
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Obtener elementos del DOM
+    const form = document.getElementById("form");
+    const mensajeAgradecimiento = document.getElementById("mensajeAgradecimiento");
+    const botonEnviar = document.getElementById("enviar");
+    const botonOtraConsulta = document.getElementById("otraConsulta");
+
+    // Evento del formulario al enviarse
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Evitar la recarga de la página
+        form.style.display = "none"; // Ocultar el formulario
+        mensajeAgradecimiento.style.display = "block"; // Mostrar el mensaje de agradecimiento
+    });
+
+    // Evento del botón "Realizar otra consulta"
+    botonOtraConsulta.addEventListener("click", () => {
+        mensajeAgradecimiento.style.display = "none"; // Ocultar el mensaje de agradecimiento
+        form.style.display = "flex"; // Mostrar el formulario
+        form.reset(); // Reiniciar los campos del formulario
+    });
+});
 
 
 
