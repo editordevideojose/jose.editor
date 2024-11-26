@@ -123,11 +123,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const botonEnviar = document.getElementById("enviar");
     const botonOtraConsulta = document.getElementById("otraConsulta");
 
+    // Ocultar el mensaje de agradecimiento al cargar la página
+    mensajeAgradecimiento.style.display = "none"; // Esto asegura que el mensaje de agradecimiento esté oculto al inicio
+
     // Evento del formulario al enviarse
     form.addEventListener("submit", (e) => {
         e.preventDefault(); // Evitar la recarga de la página
         form.style.display = "none"; // Ocultar el formulario
-        mensajeAgradecimiento.style.display = "block"; // Mostrar el mensaje de agradecimiento
+        mensajeAgradecimiento.style.display = "flex"; // Mostrar el mensaje de agradecimiento
     });
 
     // Evento del botón "Realizar otra consulta"
@@ -137,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset(); // Reiniciar los campos del formulario
     });
 });
+
 
 
 
