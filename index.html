@@ -664,12 +664,15 @@
                 <input class="campo" type="email" name="correo" id="correo" placeholder="Correo" required>
                 <textarea class="campo" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"
                     required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="">
                 <div class="checkbox-container">
-                    <input type="checkbox" id="frecuentes" name="leiFaqs">
+                    <input type="checkbox" id="frecuentes" name="frecuentes">
                     <label for="frecuentes" class="checkbox-label">Leí las preguntas frecuentes</label>
                 </div>
                 <button class="boton" id="enviar" type="submit">Enviar</button>
             </form>
+
             <!-- Mensaje de agradecimiento -->
             <div class="mensajeContainer">
                 <div id="mensajeAgradecimiento">
