@@ -116,30 +116,50 @@ scrollCarousel();
 
 
 
+// document.addEventListener("DOMContentLoaded", () => {
+//     // Obtener elementos del DOM
+//     const form = document.getElementById("form");
+//     const mensajeAgradecimiento = document.getElementById("mensajeAgradecimiento");
+//     const botonEnviar = document.getElementById("enviar");
+//     const botonOtraConsulta = document.getElementById("otraConsulta");
+
+//     // Ocultar el mensaje de agradecimiento al cargar la página
+//     mensajeAgradecimiento.style.display = "none"; // Esto asegura que el mensaje de agradecimiento esté oculto al inicio
+
+//     // Evento del formulario al enviarse
+//     form.addEventListener("submit", (e) => {
+//         e.preventDefault(); // Evitar la recarga de la página
+//         form.style.display = "none"; // Ocultar el formulario
+//         mensajeAgradecimiento.style.display = "flex"; // Mostrar el mensaje de agradecimiento
+//     });
+
+//     // Evento del botón "Realizar otra consulta"
+//     botonOtraConsulta.addEventListener("click", () => {
+//         mensajeAgradecimiento.style.display = "none"; // Ocultar el mensaje de agradecimiento
+//         form.style.display = "flex"; // Mostrar el formulario
+//         form.reset(); // Reiniciar los campos del formulario
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
-    // Obtener elementos del DOM
     const form = document.getElementById("form");
     const mensajeAgradecimiento = document.getElementById("mensajeAgradecimiento");
-    const botonEnviar = document.getElementById("enviar");
     const botonOtraConsulta = document.getElementById("otraConsulta");
 
-    // Ocultar el mensaje de agradecimiento al cargar la página
-    mensajeAgradecimiento.style.display = "none"; // Esto asegura que el mensaje de agradecimiento esté oculto al inicio
+    mensajeAgradecimiento.style.display = "none";
 
-    // Evento del formulario al enviarse
-    form.addEventListener("submit", (e) => {
-        e.preventDefault(); // Evitar la recarga de la página
-        form.style.display = "none"; // Ocultar el formulario
-        mensajeAgradecimiento.style.display = "flex"; // Mostrar el mensaje de agradecimiento
+    form.addEventListener("submit", () => {
+        form.style.display = "none";
+        mensajeAgradecimiento.style.display = "flex";
     });
 
-    // Evento del botón "Realizar otra consulta"
     botonOtraConsulta.addEventListener("click", () => {
-        mensajeAgradecimiento.style.display = "none"; // Ocultar el mensaje de agradecimiento
-        form.style.display = "flex"; // Mostrar el formulario
-        form.reset(); // Reiniciar los campos del formulario
+        mensajeAgradecimiento.style.display = "none";
+        form.style.display = "flex";
+        form.reset();
     });
 });
+
 
 
 
