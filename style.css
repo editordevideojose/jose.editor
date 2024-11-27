@@ -657,7 +657,6 @@
     .accordion-card-header {
         background-color: #003ec3;
         padding: 20px 25px 0px 25px;
-        display: flex;
         align-items: center;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -696,7 +695,7 @@
     iframe {
         display: block;
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         height: auto;
         border: none;
         border-top-left-radius: 10px;
