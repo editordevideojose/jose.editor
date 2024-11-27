@@ -627,6 +627,12 @@
 
         h3 {
             margin: 0 auto;
+            padding: 10px 0;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+            background-color: #000000;
         }
 
         p {
@@ -657,7 +663,8 @@
 
     .accordion-card-header {
         background-color: #003ec3;
-        padding: 20px 25px 0px 25px;
+        /* padding: 20px 25px 0px 25px; */
+        padding: 0;
         align-items: center;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -672,12 +679,20 @@
     #acordionCardHeader1 {
         width: 100%;
         display: flex;
+        background-color: #000000;
     }
 
     .videoYbtn {
-        position: relative;
-        width: 100%;
+        /* position: relative;
         height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        position: relative;
+
     }
 
     #videoYbtn1 {
@@ -693,17 +708,41 @@
         background-color: transparent;
     }
 
-
-    iframe {
-        display: block;
-        margin: 0 auto;
+    .iframeContainer {
+        position: relative;
         width: 100%;
-        height: auto;
-        border: none;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        padding-bottom: 56.25%;
+        height: 0;
+        margin: 0; 
+    }
+
+    .videoFrame {
         z-index: 1;
         pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    iframe {
+        z-index: 1;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background: transparent;
     }
 
     .accordion-card-header.active {
@@ -723,6 +762,8 @@
         flex-wrap: nowrap;
         align-items: center;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .accordion-card-content.show {
@@ -733,7 +774,7 @@
     .accordion-list {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px;
+        margin: 20px 20px 5px 20px;
         padding: 0;
     }
 
@@ -768,6 +809,7 @@
         background-color: #003FC3;
         color: aliceblue;
         text-align: center;
+        font-weight: 600;
     }
 
 
@@ -775,7 +817,6 @@
     video,
     .accordion-toggle-btn {
         box-sizing: border-box;
-        /* Asegura que los bordes y padding no afecten dimensiones */
     }
 
     .video1 {
@@ -787,6 +828,13 @@
         border-top-left-radius: 10px;
     }
 
+    .precioTarjeta {
+        color: grey;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0;
+    }
 }
 
 /*PANTALLA 1BIS: COPY VENDEDOR----------------------------------------------------------------*/
