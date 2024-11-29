@@ -379,11 +379,10 @@
         color: #000083;
         background-color: rgba(255, 217, 0, 0.874);
         margin: 0;
-        width: 100vw;
+        width: 80vw;
         display: flex;
         justify-content: center;
         filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
-
     }
 
     .quienSoy p {
@@ -421,7 +420,7 @@
     #section3 {
         h2 {
             color: aliceblue;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         h3 {
@@ -533,11 +532,11 @@
 
     .paso {
         position: relative;
-        width: 100%;
+        width: 80%;
         height: auto;
         /* Dejamos que la altura dependa del contenido */
         margin: 15px 0;
-        border-radius: 40px;
+        border-radius: 10px;
         border: solid 2px rgb(170, 145, 0);
         background-color: rgb(24, 0, 84);
         display: flex;
@@ -565,8 +564,6 @@
         text-align: center;
         /* Centra el texto horizontalmente */
     }
-
-
 
     .tresTituloPasos {
         color: gold;
