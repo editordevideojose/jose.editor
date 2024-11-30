@@ -307,7 +307,6 @@
         left: 50%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
-        margin-top: 15px;
     }
 
     .clienteBtn {
@@ -332,10 +331,12 @@
         color: gold;
         position: absolute;
         font-weight: 600;
-        top: 75%;
+        top: 85%;
         left: 50%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+        margin-top: 15px;
+
     }
 }
 
