@@ -130,7 +130,7 @@
     .screen0 {
         position: relative;
         width: 100vw;
-        height: 87vh;
+        height: 88vh;
         overflow: hidden;
         background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
         border-bottom: solid 1px aliceblue;
