@@ -130,7 +130,7 @@
     .screen0 {
         position: relative;
         width: 100vw;
-        height: 85vh;
+        height: 87vh;
         overflow: hidden;
         background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%);
         border-bottom: solid 1px aliceblue;
@@ -307,7 +307,7 @@
         left: 50%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .clienteBtn {
@@ -336,8 +336,6 @@
         left: 50%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-
-
     }
 }
 
@@ -1600,7 +1598,7 @@
     }
 
     .botonesCliente {
-        width: 65%;
+        width: 73%;
         margin: 40px 0px;
     }
 
@@ -1611,18 +1609,21 @@
         border-radius: 40px;
         background-color: transparent;
         color: gold;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         font-weight: 600;
+        font-size: 110%;
     }
 
     .solicitarPresupuestoBtn {
-        padding: 10px 15px;
+        padding: 12px 15px;
         width: 100%;
         border: none;
         border-radius: 40px;
         background-color: gold;
         color: rgb(9, 0, 88);
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 110%;
+
     }
 }
 
