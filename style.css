@@ -296,7 +296,7 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
         border: none;
         z-index: 3;
-        padding: 5px 17px;
+        padding: 8px 22px;
         font-size: 100%;
         border-radius: 40px;
         background-color: gold;
@@ -325,7 +325,7 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
         border: 2px solid gold;
         z-index: 4;
-        padding: 3px 10px;
+        padding: 5px 15px;
         font-size: 100%;
         border-radius: 40px;
         background-color: rgba(64, 64, 64, 0.73);
@@ -1582,47 +1582,50 @@
 }
 
 /*PANTALLA 14: CLIENTE----------------------------------------------------------*/
-#section14 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media all {
+    #section14 {
+        width: 100vw;
+        height: 100vh;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .section14Container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botonesCliente {
+        width: 65%;
+        margin: 40px 0px;
+    }
+
+    .realizarConsultaBtn {
+        padding: 10px 15px;
+        width: 100%;
+        border: solid 2px gold;
+        border-radius: 40px;
+        background-color: transparent;
+        color: gold;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .solicitarPresupuestoBtn {
+        padding: 10px 15px;
+        width: 100%;
+        border: none;
+        border-radius: 40px;
+        background-color: gold;
+        color: rgb(9, 0, 88);
+        font-weight: 600;
+    }
 }
 
-.section14Container {
-    display: flex;
-    width: 80%;
-}
-
-.botonesCliente {
-    width: 50%;
-    margin: 30px 0px;
-}
-
-.realizarConsultaBtn {
-    padding: 10px 15px;
-    width: 100%;
-    border: solid 2px gold;
-    border-radius: 40px;
-    background-color: transparent;
-    color: gold;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.solicitarPresupuestoBtn {
-    padding: 10px 15px;
-    width: 100%;
-    border: none;
-    border-radius: 40px;
-    background-color: gold;
-    color: rgb(9, 0, 88);
-    font-weight: 600;
-
-
-}
 
 
 
