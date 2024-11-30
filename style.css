@@ -142,7 +142,7 @@
         /* Oculta el contenido que se sale del área visible */
         position: relative;
         background-color: rgba(255, 217, 0, 0.816);
-        padding: 3px;
+        padding: 2px;
 
         span {
             font-size: 90%;
@@ -250,7 +250,7 @@
         justify-content: center;
 
         video {
-            width: 83%;
+            width: 80%;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
