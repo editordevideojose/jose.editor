@@ -21,6 +21,9 @@
     h2 {
         color: aliceblue;
     }
+    body{
+        /* background: radial-gradient(circle, rgba(0, 19, 255, 1) 0%, rgba(0, 15, 46, 1) 100%); */
+    }
 }
 
 /*PANTALLA 0: MODAL*/
@@ -281,7 +284,7 @@
     } */
 
     .btnComenzar {
-        border: none;
+        /* border: none;
         z-index: 3;
         padding: 10px 30px;
         font-size: 150%;
@@ -293,7 +296,51 @@
         top: 80%;
         left: 50%;
         transform: translateX(-50%);
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
+        border: none;
+        z-index: 3;
+        padding: 5px 17px;
+        font-size: 100%;
+        border-radius: 40px;
+        background-color: gold;
+        color: rgb(0, 19, 101);
+        position: absolute;
+        font-weight: 600;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        margin-top: 10px;
+    }
+
+    .clienteBtn{
+        /* font-size: 90%;
+        font-weight: 600;
+        border: none;
+        color: gold;
+        background-color: transparent;
+        text-decoration:underline;
+        z-index: 4;
+        top: 76%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
+        border: 2px solid gold;
+        z-index: 4;
+        padding: 3px 10px;
+        font-size: 100%;
+        border-radius: 40px;
+        background-color: transparent;
+        color: gold;
+        position: absolute;
+        font-weight: 600;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+
+
     }
 }
 
@@ -335,6 +382,35 @@
 
 /*PANTALLA 2: QUIEN SOY----------------------------------------------------------------*/
 @media all {
+    #section2 {
+        position: relative;
+    }
+
+    .fondoQuienSoy {
+        position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 0;
+    background-color: #000853;
+    overflow: hidden;
+        
+    }
+
+    .fondoQuienSoy::before {
+        content: '';
+    position: absolute;
+    top: -50px; /* Ajusta la altura del arco */
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ajusta la altura del arco */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 50% 50% 0 0; /* Arco hacia adentro */
+    border: solid 1px transparent;  /* Asegura que no haya borde visible */
+    background: inherit; /* Hereda el fondo del body */
+    }
+
     .quienSoy {
         width: 80%;
         height: auto;
@@ -342,12 +418,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #000e8d;
+        background-color: #0A18AB;
         /* border: solid 2px rgb(0, 0, 81); */
         border-radius: 10px;
         margin-bottom: 30px;
         padding: 10px;
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+        z-index: 1;
 
     }
 
@@ -378,7 +455,7 @@
         font-weight: 600;
         color: #000083;
         background-color: rgba(255, 217, 0, 0.874);
-        margin: 0;
+        margin: 15px 0;
         width: 80vw;
         display: flex;
         justify-content: center;
@@ -387,7 +464,7 @@
 
     .quienSoy p {
         font-weight: 500;
-        font-size: 85%;
+        font-size: 90%;
         color: aliceblue;
         line-height: 1.6;
         text-align: center;
@@ -710,7 +787,7 @@
         width: 100%;
         padding-bottom: 56.25%;
         height: 0;
-        margin: 0; 
+        margin: 0;
     }
 
     .videoFrame {
