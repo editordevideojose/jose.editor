@@ -296,7 +296,7 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
         border: none;
         z-index: 3;
-        padding: 8px 22px;
+        padding: 9px 23px;
         font-size: 100%;
         border-radius: 40px;
         background-color: gold;
@@ -310,7 +310,7 @@
     }
 
     .clienteBtn {
-        /* font-size: 90%;
+        /* font-sizes: 90%;
         font-weight: 600;
         border: none;
         color: gold;
@@ -324,7 +324,7 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
         border: 2px solid gold;
         z-index: 4;
-        padding: 5px 15px;
+        padding: 7px 19px;
         font-size: 100%;
         border-radius: 40px;
         background-color: rgba(64, 64, 64, 0.73);
