@@ -310,7 +310,7 @@
         margin-top: 10px;
     }
 
-    .clienteBtn{
+    .clienteBtn {
         /* font-size: 90%;
         font-weight: 600;
         border: none;
@@ -385,27 +385,33 @@
 
     .fondoQuienSoy {
         position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    z-index: 0;
-    background-color: #000853;
-    overflow: hidden;
-        
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        z-index: 0;
+        background-color: #000853;
+        overflow: hidden;
+
     }
 
     .fondoQuienSoy::before {
         content: '';
-    position: absolute;
-    top: -50px; /* Ajusta la altura del arco */
-    left: 0;
-    width: 100%;
-    height: 100px; /* Ajusta la altura del arco */
-    background-color: transparent; /* Fondo transparente */
-    border-radius: 50% 50% 0 0; /* Arco hacia adentro */
-    border: solid 1px transparent;  /* Asegura que no haya borde visible */
-    background: inherit; /* Hereda el fondo del body */
+        position: absolute;
+        top: -50px;
+        /* Ajusta la altura del arco */
+        left: 0;
+        width: 100%;
+        height: 100px;
+        /* Ajusta la altura del arco */
+        background-color: transparent;
+        /* Fondo transparente */
+        border-radius: 50% 50% 0 0;
+        /* Arco hacia adentro */
+        border: solid 1px transparent;
+        /* Asegura que no haya borde visible */
+        background: inherit;
+        /* Hereda el fondo del body */
     }
 
     .quienSoy {
@@ -1574,6 +1580,52 @@
         width: 100%;
     }
 }
+
+/*PANTALLA 14: CLIENTE----------------------------------------------------------*/
+#section14 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section14Container {
+    display: flex;
+    width: 80%;
+}
+
+.botonesCliente {
+    width: 50%;
+    margin: 30px 0px;
+}
+
+.realizarConsultaBtn {
+    padding: 10px 15px;
+    width: 100%;
+    border: solid 2px gold;
+    border-radius: 40px;
+    background-color: transparent;
+    color: gold;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.solicitarPresupuestoBtn {
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    background-color: gold;
+    color: rgb(9, 0, 88);
+    font-weight: 600;
+
+
+}
+
+
+
 
 /*FOOTER----------------------------------------------------------*/
 @media all {
