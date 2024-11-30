@@ -327,7 +327,9 @@
         padding: 5px 15px;
         font-size: 120%;
         border-radius: 40px;
-        background-color: rgba(64, 64, 64, 0.73);
+        /* background-color: rgba(64, 64, 64, 0.73); */
+        /* background-color: #03083D; */
+        background-color: #00000068;
         color: gold;
         position: absolute;
         font-weight: 500;
