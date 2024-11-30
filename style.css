@@ -296,8 +296,8 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
         border: none;
         z-index: 3;
-        padding: 9px 23px;
-        font-size: 100%;
+        padding: 7px 21px;
+        font-size: 120%;
         border-radius: 40px;
         background-color: gold;
         color: rgb(0, 19, 101);
@@ -324,13 +324,13 @@
         filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); */
         border: 2px solid gold;
         z-index: 4;
-        padding: 7px 19px;
-        font-size: 100%;
+        padding: 5px 15px;
+        font-size: 120%;
         border-radius: 40px;
         background-color: rgba(64, 64, 64, 0.73);
         color: gold;
         position: absolute;
-        font-weight: 600;
+        font-weight: 500;
         top: 85%;
         left: 50%;
         transform: translateX(-50%);
