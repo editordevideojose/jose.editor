@@ -1584,6 +1584,7 @@
     #section14 {
         width: 100vw;
         height: 100vh;
+        background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
         /* display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1623,7 +1624,12 @@
         color: rgb(9, 0, 88);
         font-weight: 500;
         font-size: 110%;
-
+    }
+    .volverInicio{
+        color: #000069;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 90%;
     }
 }
 
