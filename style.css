@@ -327,7 +327,8 @@
         padding: 7px 19px;
         font-size: 100%;
         border-radius: 10px;
-        background-color: #00000068;
+        /* background-color: #00000083; */
+        background-color: rgb(0, 0, 47);
         color: gold;
         position: absolute;
         font-weight: 500;
