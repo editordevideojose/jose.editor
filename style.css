@@ -1587,10 +1587,6 @@
         width: 100vw;
         height: 100vh;
         background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
     }
 
     .section14Container {
@@ -1604,37 +1600,66 @@
 
     .botonesCliente {
         width: 73%;
-        margin: 40px 0px;
+        margin: 35px 0px 0px 0px;
+        font-size: 100%;
     }
 
     .realizarConsultaBtn {
         padding: 10px 15px;
         width: 100%;
         border: solid 2px gold;
-        border-radius: 40px;
+        border-radius: 10px;
         background-color: transparent;
         color: gold;
         margin-bottom: 15px;
         font-weight: 600;
-        font-size: 110%;
+        font-size: 100%;
     }
 
     .solicitarPresupuestoBtn {
         padding: 12px 15px;
         width: 100%;
         border: none;
-        border-radius: 40px;
+        border-radius: 10px;
         background-color: gold;
         color: rgb(9, 0, 88);
         font-weight: 500;
-        font-size: 110%;
+        font-size: 100%;
+        margin-bottom: 15px;
     }
+    .divider {
+        height: 20px; /* Grosor de la línea */
+        background-color: #4a4a4a49; /* Color de la línea */
+        width: 40%; /* Ocupa el ancho total */
+        z-index: 5;
+        margin: 20px 0px 20px 0px;
+      }   
+
+    #botonesSecundarios{
+        margin-top: 10px;
+        font-size: 100%;
+    }
+
+    #btnProyecto{
+        color: whitesmoke;
+        background-color: #030045;
+        border: solid 2px #030045;
+        font-weight: 500;
+    }
+    #btnPago{
+        background-color: #008817;
+        color: rgb(245, 245, 245);
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+   
     .volverInicio{
         color: #000069;
         text-decoration: underline;
         font-weight: 500;
         font-size: 90%;
     }
+
 }
 
 
