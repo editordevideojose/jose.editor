@@ -21,29 +21,61 @@
 
         <div class="section14Container">
             <h2>Realizar pago</h2>
-            <h2 class="formSubtitulo">Elegí tu método de pago</h2>
+            <h2 class="formSubtitulo">Elige tu método de pago</h2>
             <div class="botonesCliente">
-                <a href="solicitud.html">
-                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon" class="fa-solid fa-landmark"></i>Transferencia</button>
+                <!-- <a href="">
+                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon"
+                            class="fa-solid fa-landmark"></i>Transferencia</button>
+                </a> -->
+                <button id="btnTransferencia" class="solicitarPresupuestoBtn">
+                    <i id="pagosIcon" class="fa-solid fa-landmark"></i>Transferencia
+                </button>
+
+                <a href="">
+                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon"
+                            class="fas fa-credit-card"></i>Tarjetas</button>
                 </a>
-                <a href="solicitud.html">
-                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon" class="fas fa-credit-card"></i>Tarjetas</button>
-                </a>
-                <a href="solicitud.html">
-                    <button id="btnMercado" class="solicitarPresupuestoBtn"><img  id="btnMp" src="img/logos/logo-mercadopago.png" alt=""></button>
+                <a href="">
+                    <button id="btnMercado" class="solicitarPresupuestoBtn"><img id="btnMp"
+                            src="img/logos/logo-mercadopago.png" alt=""></button>
                 </a>
             </div>
             <p class="desdeExterior">Desde el exterior de Argentina</p>
             <div id="seccionPp" class="botonesCliente">
-                <a href="solicitud.html">
-                    <button class="solicitarPresupuestoBtn"><img id="btnPp" src="img/logos/logo-paypal.png" alt=""></button>
+                <a href="">
+                    <button class="solicitarPresupuestoBtn"><img id="btnPp" src="img/logos/logo-paypal.png"
+                            alt=""></button>
                 </a>
 
             </div>
-           
+
             <a class="volverInicio" href="index.html">Volver al inicio</a>
         </div>
+
+
+
+        <!-- Modal -->
+        <div id="modalTransferencia" class="modal2">
+            <div class="modal-content2">
+                <h3>Transferencia</h3>
+                <p>Realiza la transferencia:</p>
+                <p id="cbuYalias">CBU: <strong>xxx-xxxx-xxx</strong></p>
+                <p id="cbuYalias">ALIAS: <strong>xxx-xxxx-xxx</strong></p>
+                <p id="adjuntaComprobante">Adjunta el comprobante:</p>
+                <button id="btnAdjuntar" class="file-upload-btn">Adjuntar Archivo</button>
+                <input type="file" id="fileInput" style="display: none;" />
+                <button id="btnEnviar" class="action-btn">ENVIAR</button>
+            </div>
+            <div id="mensajeFinal" class="hidden">
+                <img src="img/logos/logo-transaccion-exitosa.png" alt="">
+                <p>¡Listo!</p>
+                <p>En las próximas horas te llegará por correo el enlace de descarga del proyecto.</p>
+                <p>¡Muchas gracias!</p>
+                <button id="btnFinalizar" class="close-btn">Finalizar</button>
+            </div>
+        </div>
     </div>
+    <script src="scriptPago.js"></script>
 
 </body>
 
