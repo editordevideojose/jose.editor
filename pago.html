@@ -23,10 +23,6 @@
             <h2>Realizar pago</h2>
             <h2 class="formSubtitulo">Elige tu método de pago</h2>
             <div class="botonesCliente">
-                <!-- <a href="">
-                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon"
-                            class="fa-solid fa-landmark"></i>Transferencia</button>
-                </a> -->
                 <button id="btnTransferencia" class="solicitarPresupuestoBtn">
                     <i id="pagosIcon" class="fa-solid fa-landmark"></i>Transferencia
                 </button>
@@ -43,18 +39,25 @@
             <p class="desdeExterior">Desde el exterior de Argentina</p>
             <div id="seccionPp" class="botonesCliente">
                 <a href="">
-                    <button class="solicitarPresupuestoBtn"><img id="btnPp" src="img/logos/logo-paypal.png"
-                            alt=""></button>
+                    <button id="btnPaypal" class="action-btn, solicitarPresupuestoBtn"><img id="btnPp"
+                        src="img/logos/logo-paypal.png" alt=""></button>
+                    <!-- <button id="btnPaypalPrex" class="solicitarPresupuestoBtn"><img id="btnPp"
+                            src="img/logos/logo-paypal.png" alt=""></button> -->
                 </a>
+                <!-- <a href="">
+                    <button id="btnPaypalPrex" class="solicitarPresupuestoBtn"><img id="btnPp"
+                            src="img/logos/logo-prex.png" alt=""></button>
+                </a> -->
+                <button id="btnPrex" class="action-btn, solicitarPresupuestoBtn"><img id="btnPp"
+                    src="img/logos/logo-prex.png" alt=""></button>
 
             </div>
-
             <a class="volverInicio" href="index.html">Volver al inicio</a>
         </div>
 
 
 
-        <!-- Modal -->
+        <!-- MODAL TRANSFERENCIA -->
         <div id="modalTransferencia" class="modal2">
             <div class="modal-content2">
                 <h3>Transferencia</h3>
@@ -64,7 +67,6 @@
                     <p id="cbuYalias"><strong>0720068788000002481636</strong></p>
                     <p id="cbuYalias">ó ALIAS:</p>
                     <p id="cbuYalias"><strong>jose.sat.sa</strong></p>
-
                 </div>
                 <!-- <p id="adjuntaComprobante">Adjunta el comprobante:</p> -->
                 <button id="btnAdjuntar" class="file-upload-btn">Adjuntar comprobante</button>
@@ -79,7 +81,58 @@
                 <button id="btnFinalizar" class="close-btn">Finalizar</button>
             </div>
         </div>
+
+        <!-- MODAL PAYPAL -->
+        <div id="modalPaypal" class="modal2">
+            <div class="modal-content2">
+                <img id="btnPp" src="img/logos/logo-paypal.png" alt="">
+                <p>Realiza el pago mediante:</p>
+                <div class="cbuContainer">
+                    <p id="cbuYalias">Correo:</p>
+                    <p id="cbuYalias"><strong>jose.sat94@gmail.com</strong></p>
+                </div>
+                <!-- <p id="adjuntaComprobante">Adjunta el comprobante:</p> -->
+                <button id="btnAdjuntar" class="file-upload-btn">Adjuntar comprobante</button>
+                <input type="file" id="fileInput" style="display: none;" />
+                <button id="btnEnviar" class="action-btn">ENVIAR</button>
+            </div>
+            <div id="mensajeFinal" class="hidden">
+                <img src="img/logos/logo-transaccion-exitosa.png" alt="">
+                <p>¡Listo!</p>
+                <p>En las próximas horas te llegará por correo el enlace de descarga del proyecto.</p>
+                <p>¡Muchas gracias!</p>
+                <button id="btnFinalizar" class="close-btn">Finalizar</button>
+            </div>
+        </div>
+
+        <!-- MODAL PREX -->
+        <div id="modalPrex" class="modal2">
+            <div class="modal-content2">
+                <img id="btnPp" src="img/logos/logo-prex.png" alt="">
+                <p>Realiza el pago mediante:</p>
+                <div class="cbuContainer">
+                    <p id="cbuYalias">Cuenta Prex:</p>
+                    <p id="cbuYalias"><strong>13875349</strong></p>
+                    <p id="cbuYalias">ó ALIAS:</p>
+                    <p id="cbuYalias"><strong>jose.sat.px</strong></p>
+                </div>
+                <button id="btnAdjuntar" class="file-upload-btn">Adjuntar comprobante</button>
+                <input type="file" id="fileInput" style="display: none;" />
+                <button id="btnEnviar" class="action-btn">ENVIAR</button>
+            </div>
+            <div id="mensajeFinal" class="hidden">
+                <img src="img/logos/logo-transaccion-exitosa.png" alt="">
+                <p>¡Listo!</p>
+                <p>En las próximas horas te llegará por correo el enlace de descarga del proyecto.</p>
+                <p>¡Muchas gracias!</p>
+                <button id="btnFinalizar" class="close-btn">Finalizar</button>
+            </div>
+        </div>
+
+
+
     </div>
+
     <script src="scriptPago.js"></script>
 
 </body>
