@@ -1727,20 +1727,27 @@
         text-align: center;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         z-index: 10000;
-        h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
             color: #000853;
             margin-bottom: 15px;
         }
-        p{
+
+        p {
             font-size: 80%;
             font-weight: 500;
         }
-        #adjuntaComprobante{
+
+        #adjuntaComprobante {
             margin-top: 10px;
             margin-bottom: 0p;
         }
-        #cbuYalias{
-            color: gray;
+
+        #cbuYalias {
+            color: rgb(114, 114, 114);
         }
     }
 
@@ -1748,9 +1755,19 @@
         display: none;
     }
 
+    .cbuContainer {
+        width: 75%;
+        background-color: rgb(238, 238, 238);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .action-btn,
     .close-btn {
-        margin: 15px 10px 10px 10px;
+        margin: 5px 10px 10px 10px;
         padding: 10px 20px;
         background-color: gold;
         border: none;
@@ -1758,27 +1775,35 @@
         cursor: pointer;
     }
 
-    .file-upload-btn{
-        width: 70%;
+    .file-upload-btn {
+        width: 75%;
         border-radius: 5px;
-
+        margin-top: 15px;
         padding: 8px 20px;
         background-color: transparent;
         border: solid 2px gold;
     }
 
-    .action-btn{
-        width: 70%;
+    .action-btn {
+        width: 75%;
     }
 
     .close-btn {
+        width: 75%;
         background-color: rgb(1, 0, 40);
         color: white;
         margin-bottom: 0;
     }
 
+    .mensaje-final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .modal-content2 .mensajeModalListo {
         h3 {
+            width: 75%;
             font-size: 80%;
             font-weight: 500;
             color: gray;
@@ -1793,15 +1818,16 @@
 
     }
 
-    .iconoTransaccionExitosa {
-        width: 10%;
-        margin-bottom: 5px;
+    .mensajeModalListo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-
-
-
-
+    .iconoTransaccionExitosa {
+        width: 10%;
+        margin-bottom: 10px;
+    }
 
 }
 
