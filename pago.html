@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -18,28 +20,27 @@
         <img id="logoCliente" class="logoImg" src="img/Copia de Proyecto nuevo.png" alt="">
 
         <div class="section14Container">
-            <h2>¡Hola de nuevo!</h2>
-            <h2 class="formSubtitulo">¿Cómo te ayudo hoy?</h2>
+            <h2>Realizar pago</h2>
+            <h2 class="formSubtitulo">Elegí tu método de pago</h2>
             <div class="botonesCliente">
-                <a href="index.html#section11">
-                    <button class="realizarConsultaBtn">Realizar consulta</button>
+                <a href="solicitud.html">
+                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon" class="fa-solid fa-landmark"></i>Transferencia</button>
                 </a>
                 <a href="solicitud.html">
-                    <button class="solicitarPresupuestoBtn">Solicitar presupuesto</button>
+                    <button id="btnMercado" class="solicitarPresupuestoBtn"><img  id="btnMp" src="img/logos/logo-mercadopago.png" alt=""></button>
                 </a>
-                <!-- <a href="index.html#section11">
-                    <button id="reunionBtn" class="realizarConsultaBtn">Programar reunión</button>
-                </a> -->
-            </div>
-            <hr class="divider">
-            <div id="botonesSecundarios" class="botonesCliente">
-                <a href="index.html#section11">
-                    <button id="btnProyecto" class="realizarConsultaBtn">Estado del proyecto</button>
-                </a>
-                <a href="pago.html">
-                    <button id="btnPago" class="solicitarPresupuestoBtn">PAGAR</button>
+                <a href="solicitud.html">
+                    <button class="solicitarPresupuestoBtn"><i id="pagosIcon" class="fas fa-credit-card"></i>Tarjetas</button>
                 </a>
             </div>
+            <p class="desdeExterior">Desde el exterior de Argentina</p>
+            <div id="seccionPp" class="botonesCliente">
+                <a href="solicitud.html">
+                    <button class="solicitarPresupuestoBtn"><img id="btnPp" src="img/logos/logo-paypal.png" alt=""></button>
+                </a>
+
+            </div>
+           
             <a class="volverInicio" href="index.html">Volver al inicio</a>
         </div>
     </div>

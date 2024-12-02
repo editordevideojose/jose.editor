@@ -1588,7 +1588,8 @@
         height: 100vh;
         background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
     }
-    #logoCliente{
+
+    #logoCliente {
         margin-top: 0;
     }
 
@@ -1631,39 +1632,74 @@
         font-size: 100%;
         margin-bottom: 15px;
     }
+
     .divider {
-        height: 2px; /* Grosor de la línea */
-        background-color: #4a4a4a49; /* Color de la línea */
-        width: 40%; /* Ocupa el ancho total */
+        height: 2px;
+        /* Grosor de la línea */
+        background-color: #4a4a4a49;
+        /* Color de la línea */
+        width: 40%;
+        /* Ocupa el ancho total */
         z-index: 5;
         margin: 20px 0px 20px 0px;
-      }   
+    }
 
-    #botonesSecundarios{
+    #botonesSecundarios {
         margin-top: 10px;
         font-size: 100%;
     }
 
-    #btnProyecto{
+    #btnProyecto {
         color: whitesmoke;
         background-color: #030045;
         border: solid 2px #030045;
         font-weight: 500;
     }
-    #btnPago{
+
+    #btnPago {
         background-color: #008817;
         color: rgb(245, 245, 245);
         border-radius: 10px;
         margin-bottom: 30px;
     }
-   
-    .volverInicio{
+
+    .volverInicio {
         color: #000069;
         text-decoration: underline;
         font-weight: 500;
         font-size: 90%;
     }
 
+}
+
+/*PANTALLA 15: PAGO----------------------------------------------------------*/
+@media all {
+    #btnMercado{
+        padding: 8px 0px;
+    }
+    #btnMp {
+        width: 50%;
+        left: 50%;
+        margin: 0;
+    }
+
+    #btnPp {
+        width: 42%;
+        left: 50%;
+    }
+
+    .desdeExterior {
+        font-size: 90%;
+        text-align: center;
+        margin: 20px 0px 0px 0px;
+        color: aliceblue;
+    }
+    #seccionPp{
+        margin: 10px 0px 20px 0px;
+    }
+    #pagosIcon{
+        padding: 0px 5px 0px 0px;
+    }
 }
 
 
