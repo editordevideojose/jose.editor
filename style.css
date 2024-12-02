@@ -66,7 +66,7 @@
 
     .lang-button {
         margin: 10px;
-        padding: 5px 8px;
+        padding: 7px 14px;
         background-color: #000069;
         color: white;
         border: none;
@@ -78,12 +78,6 @@
     .lang-button:hover {
         background-color: #0056b3;
     }
-
-    /* .site-content {
-        display: none;
-        width: 100vw;
-        height: auto;
-    } */
 
     .site-content {
         filter: blur(5px);
