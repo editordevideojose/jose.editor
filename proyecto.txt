@@ -1,0 +1,37 @@
+- iconos: https://fontawesome.com/v6/search?q=money&o=r&m=free
+- tipografia:
+
+Paleta de colores:
+- azul:
+- amarillo:
+- blanco: aliceblue
+- violeta:
+
+PROYECTO:
+Usuario administrador: puede subir archivos, modificar estado del proyecto, responder consultas.
+Usuario cliente: puede subir archivos, enviar consultas, enviar correcciones.
+
+FLUJO EXPERIENCIA DE USUARIO:
+Inicio> Soy cliente> Login> 
+
+SECCION: ESTADO DEL PROYECTO
+
+Tabla superior con datos del cliente:
+- Nombre cliente
+- Correo
+- proyecto
+- fecha ingreso
+- Fecha estimada primera entrega
+- fecha estimada entrega final
+
+Estados del proyecto:
+- Presupuesto solicitado
+- Formulario completo
+- Presupuesto enviado
+- Pago 50%
+- Recepcion de archivos
+- Edicion
+- 1ra version (marca de agua y calidad al 50%) (btn descarga)
+- Ajustes (disponible para escribir las correcciones)
+- Pago 50% restante (btn redirige a la seccion pagos)
+- Entrega final (btn descarga)
