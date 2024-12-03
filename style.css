@@ -1683,7 +1683,7 @@
         left: 50%;
     }
 
-    #btnPaypalPrex{
+    #btnPaypalPrex {
         background-color: aliceblue;
     }
 
@@ -1786,8 +1786,10 @@
         width: 75%;
     }
 
-    #btnPaypal, #btnPrex{
-background-color: aliceblue;    }
+    #btnPaypal,
+    #btnPrex {
+        background-color: aliceblue;
+    }
 
     .close-btn {
         width: 75%;
@@ -1828,6 +1830,22 @@ background-color: aliceblue;    }
     .iconoTransaccionExitosa {
         width: 10%;
         margin-bottom: 10px;
+    }
+
+    .btnDescuento{
+        padding: 0px 0px 12px 0px;
+    }
+    .solapaDescuento{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px ;
+        /* background-color: #078a00; */
+        background-color: black;
+        width: 100%;
+        color: rgb(242, 255, 240);
+        font-size: 60%;
+        margin-bottom: 6px;
+        padding: 1px 0px;
+        
     }
 
 }
