@@ -35,3 +35,82 @@ Estados del proyecto:
 - Ajustes (disponible para escribir las correcciones)
 - Pago 50% restante (btn redirige a la seccion pagos)
 - Entrega final (btn descarga)
+
+
+
+ESTILO DE BOTONES:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones UX/UI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .btn {
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            padding: 15px;
+            background-color: #ffffff;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            border-color: #007bff;
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn i {
+            font-size: 20px;
+            color: #007bff;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <a href="#" class="btn"><i class="fas fa-envelope"></i> Realizar consulta</a>
+    <a href="#" class="btn"><i class="fas fa-file-invoice"></i> Solicitar presupuesto</a>
+    <a href="#" class="btn"><i class="fas fa-calendar-alt"></i> Programar reunión</a>
+    <a href="#" class="btn"><i class="fas fa-tasks"></i> Estado del proyecto</a>
+    <a href="#" class="btn"><i class="fas fa-credit-card"></i> Realizar pago</a>
+</div>
+
+</body>
+</html>

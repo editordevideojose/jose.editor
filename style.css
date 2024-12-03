@@ -1852,7 +1852,20 @@
 
 
 
+@media all{
+    .screenConsultaCliente{
+        background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
 
+    }
+
+    .formConsultaCliente{
+        margin-bottom: 30px;
+    }
+
+    .logoImgConsultacliente{
+        margin-bottom: 0px;
+    }
+}
 
 /*FOOTER----------------------------------------------------------*/
 @media all {

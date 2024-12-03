@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!---FORMULARIO CONSULTA -->
+    <div id="section11" class="screen5 screenConsultaCliente">
+        <img id="logoCliente" class="logoImg logoImgConsultacliente" src="img/Copia de Proyecto nuevo.png" alt="">
+        <h2>¿Cuál es tu consulta?</h2>
+        <h2 class="formSubtitulo">Completa el formulario</h2>
+        <form class="form formConsultaCliente" id="form" action="https://formsubmit.co/editordevideo.jose@gmail.com" method="POST">
+            <input class="campo" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input class="campo" type="email" name="correo" id="correo" placeholder="Correo" required>
+            <textarea class="campo" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"
+                required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+            <div class="checkbox-container">
+                <input type="checkbox" id="frecuentes" name="frecuentes">
+                <label for="frecuentes" class="checkbox-label">Leí las preguntas frecuentes</label>
+            </div>
+            <button class="boton" id="enviar" type="submit">Enviar</button>
+        </form>
+
+        <!-- Mensaje de agradecimiento -->
+        <div class="mensajeContainer">
+            <div id="mensajeAgradecimiento">
+                <p>¡Gracias por tu mensaje!</p>
+                <p>En 24 hs me comunico contigo.</p>
+                <button id="otraConsulta" class="boton">Nueva consulta</button>
+            </div>
+        </div>
+
+        <a class="volverInicio" href="index.html">Volver al inicio</a>
+
+    </div>
+
+
+    <script src="scriptConsultaCliente.js"></script>
+</body>
+
+</html>
