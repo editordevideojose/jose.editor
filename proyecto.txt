@@ -37,6 +37,46 @@ Estados del proyecto:
 - Entrega final (btn descarga)
 
 
+RESEÑAS:
+Boton: 'Dejar reseña'
+(Trustpilot)
+
+Flujo de usuario:
+- se contrata el servicio pagando el 50% del total (100%)
+- se entrega 1ra version con marca de agua y baja calidad
+- se realizan correcciones
+- se entrega 2da version con marca de agua y baja calidad
+- se dirige al boton de pago y de dejar reseña
+- se paga el 50% restante y se deja la reseña y se libera el link de descarga
+(si el usuario tiene descuento, en vez del 50% restante se paga  el 25%)
+- se entrega la version final del proyecto sin marca de agua y en alta calidad mediante link de descarga
+
+PANEL DE USUARIO-CLIENTE:
+Aqui el usuario puede gestionar sus consultas, consultar el estado del proyecto, realizar observaciones
+para las correcciones, comunicarse conmigo, acceder al boton de pago, al boton de reseñas, descargar mediante
+enlace la primera version, la segunda version y la version final del proyecto. tambien puede ver fechas aproximadas
+de cuando su trabajo estara listo o pasara a la siguiente etapa.
+PANEL USUARIO-ADMINISTRADOR:
+Aqui el administrador puede gestionar los estados del proyecto, realizar observaciones en el estado correciones,
+comunicarse con el cliente, subir archivos mediante links, consultar clientes, tener metricas y analiticas por mes,
+y por total.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ESTILO DE BOTONES:
 <!DOCTYPE html>

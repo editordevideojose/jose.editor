@@ -1583,18 +1583,19 @@
         background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
     }
 
-    #logoCliente {
-        margin-top: 0;
+    #logoCliente.logoImg {
+        /* margin-bottom: px; */
     }
 
     .section14Container {
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin-top: 50px;
         width: 80%;
         height: 79%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .botonesCliente {
@@ -1855,7 +1856,6 @@
 @media all{
     .screenConsultaCliente{
         background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
-
     }
 
     .formConsultaCliente{
