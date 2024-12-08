@@ -39,7 +39,7 @@ Estados del proyecto:
 
 RESEÑAS:
 Boton: 'Dejar reseña'
-(Trustpilot)
+(Trustpilot o Google Reviews)
 
 Flujo de usuario:
 - se contrata el servicio pagando el 50% del total (100%)

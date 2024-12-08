@@ -352,8 +352,8 @@
 
         h5 {
             color: #0000ce;
-            border-radius: 5px;
-            padding: 1px 0px 1px 0px;
+            border-radius: 10px;
+            padding: 10px 10px;
             background-color: aliceblue;
             display: flex;
             justify-content: center;
@@ -415,14 +415,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #0A18AB;
-        /* border: solid 2px rgb(0, 0, 81); */
+        z-index: 1;
+        /* background-color: #0A18AB;
         border-radius: 10px;
         margin-bottom: 30px;
         padding: 10px;
-        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
-        z-index: 1;
-
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)); */
     }
 
     .imgFlecha {
@@ -453,20 +451,23 @@
         color: #000083;
         background-color: rgba(255, 217, 0, 0.874);
         margin: 15px 0;
-        width: 80vw;
+        width: 100vw;
         display: flex;
         justify-content: center;
         filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
     }
 
+    .contenedorBio {
+        margin: 20px 0px 30px 0px;
+    }
+
     .quienSoy p {
-        font-weight: 500;
-        font-size: 90%;
+        font-weight: 400;
+        font-size: 110%;
         color: aliceblue;
         line-height: 1.6;
         text-align: center;
-        width: 80%;
-        margin: 25px;
+        width: 100%;
     }
 
     #teCuento {
@@ -483,7 +484,7 @@
     }
 
     .convertir {
-        font-weight: 600;
+        font-weight: 700;
         color: gold;
 
     }
@@ -863,7 +864,7 @@
         z-index: 2;
         padding: 8px;
         border: none;
-        border-radius: 20px;
+        border-radius: 5px;
         background-color: #003FC3;
         color: aliceblue;
         cursor: pointer;
@@ -882,7 +883,6 @@
         text-align: center;
         font-weight: 600;
     }
-
 
     .accordion-card-header,
     video,
@@ -1124,7 +1124,8 @@
         margin: 20% 20%;
         box-sizing: border-box;
         text-align: center;
-        background-color: #f0f0f0;
+        /* background-color: #f0f0f0; */
+        background-color: #c1c1c1;
         border-radius: 10px;
         font-size: 1.2em;
         color: #333;
@@ -1474,7 +1475,7 @@
         width: 80%;
         margin: 20px;
         padding: 10px;
-        border-radius: 20px;
+        border-radius: 10px;
         border: none;
         background-color: #6c00ca;
         color: aliceblue;
@@ -1833,12 +1834,13 @@
         margin-bottom: 10px;
     }
 
-    .btnDescuento{
+    .btnDescuento {
         padding: 0px 0px 12px 0px;
     }
-    .solapaDescuento{
+
+    .solapaDescuento {
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px ;
+        border-top-right-radius: 10px;
         /* background-color: #078a00; */
         background-color: black;
         width: 100%;
@@ -1846,23 +1848,22 @@
         font-size: 60%;
         margin-bottom: 6px;
         padding: 1px 0px;
-        
+
     }
 
 }
 
-
-
-@media all{
-    .screenConsultaCliente{
+/*PANTALLA 15: CONSULTA CLIENTE----------------------------------------------------------*/
+@media all {
+    .screenConsultaCliente {
         background: radial-gradient(circle, rgb(131, 131, 131) 0%, rgb(0, 22, 65) 100%);
     }
 
-    .formConsultaCliente{
+    .formConsultaCliente {
         margin-bottom: 30px;
     }
 
-    .logoImgConsultacliente{
+    .logoImgConsultacliente {
         margin-bottom: 0px;
     }
 }
@@ -1934,6 +1935,11 @@
         }
     }
 }
+
+
+
+
+
 
 
 
