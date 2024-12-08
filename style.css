@@ -62,11 +62,12 @@
 
     .modal-content p {
         font-size: 80%;
+        font-weight: 500;
     }
 
     .lang-button {
-        margin: 10px;
-        padding: 7px 14px;
+        margin: 10px 5px;
+        padding: 0px 18px;
         background-color: #000069;
         color: white;
         border: none;
@@ -77,6 +78,10 @@
 
     .lang-button:hover {
         background-color: #0056b3;
+    }
+
+    .bandera {
+        font-size: 180%;
     }
 
     .site-content {
@@ -108,7 +113,7 @@
     }
 
     .logoImgModal {
-        width: 10%;
+        width: 15%;
         margin: 0;
         left: 50%;
     }
@@ -685,6 +690,10 @@
 
     .contenedorSubtitulo {
         width: 100%;
+        background-color: rgb(255, 213, 0);
+        text-align: center;
+        padding-bottom: 5px;
+
     }
 
     .accordion-container {
@@ -692,7 +701,6 @@
         margin: auto;
 
         h6 {
-            background-color: rgb(255, 213, 0);
             padding: 5px;
             text-align: center;
         }
@@ -1008,7 +1016,7 @@
 
         button {
             padding: 5px 40px;
-            border-radius: 20px;
+            border-radius: 5px;
             border: none;
             margin-top: 5px;
         }
