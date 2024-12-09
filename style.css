@@ -493,6 +493,24 @@
         color: gold;
 
     }
+
+    .listoParaPublicar{
+        text-decoration: underline solid #9c2bfe 3px;
+        
+    }
+
+    .hrCopy{
+        width: 90%;
+        height: 1%;
+        background-color: #acacac;
+        border: none;
+        margin: auto;
+        opacity: 30%;
+        border-radius: 5px;
+        background: linear-gradient(to right, transparent, black, transparent);
+
+        
+    }
 }
 
 /*PANTALLA 3: MI PROCESO DE TRABAJO----------------------------------------------------------------*/
