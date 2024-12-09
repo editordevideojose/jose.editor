@@ -542,23 +542,23 @@
 
     .titulosAntesDespues {
         display: flex;
-        width: 100%;
+        width: 80%;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+
     }
 
     .tituloAntes{
-        width: 45%;
+        width: 40%;
         text-align: center;
         color: aliceblue;
     }
 
-    .flechaTransforma{
-        width: 10%;
-    }
-
     #despues{
         color: gold;
+        width: 60%;
+        text-align: center;
     }
 
     .videoAntes{
