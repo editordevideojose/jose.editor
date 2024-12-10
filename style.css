@@ -986,6 +986,40 @@
         margin-top: 10px;
         padding: 0;
     }
+    .xCantidadPlan3{
+        padding: 0;
+        margin: 0;
+    }
+    .contenedorSolapa{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .solapaOff{
+        background-color: gold;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        border-top-left-radius: 9px;
+        .p20{
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }  
+    }
+    .contenedorCursoOnline {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #h3Online{
+        margin-top: 1px;
+    }
 }
 
 /*PANTALLA 1BIS: COPY VENDEDOR----------------------------------------------------------------*/
