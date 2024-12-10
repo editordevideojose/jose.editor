@@ -494,12 +494,12 @@
 
     }
 
-    .listoParaPublicar{
+    .listoParaPublicar {
         text-decoration: underline solid #9c2bfe 3px;
-        
+
     }
 
-    .hrCopy{
+    .hrCopy {
         width: 90%;
         height: 1%;
         background-color: #acacac;
@@ -509,13 +509,13 @@
         border-radius: 5px;
         background: linear-gradient(to right, transparent, black, transparent);
 
-        
+
     }
 }
 
 /*PANTALLA 2BIS: TRANSFORMA TU CONTENIDO----------------------------------------------------------------*/
-@media all{
-    .contenedorAntesYdespues{
+@media all {
+    .contenedorAntesYdespues {
         width: 80%;
         display: flex;
         align-items: center;
@@ -523,7 +523,7 @@
         margin: 30px 0px 10px 0px;
     }
 
-    .antes{
+    .antes {
         width: 40%;
         height: auto;
         border: solid 2px aliceblue;
@@ -531,7 +531,7 @@
         background-color: #000000;
     }
 
-    .despues{
+    .despues {
         width: 60%;
         height: auto;
         border: solid 2px gold;
@@ -549,19 +549,19 @@
 
     }
 
-    .tituloAntes{
+    .tituloAntes {
         width: 40%;
         text-align: center;
         color: aliceblue;
     }
 
-    #despues{
+    #despues {
         color: gold;
         width: 60%;
         text-align: center;
     }
 
-    .videoAntes{
+    .videoAntes {
         width: 100%;
         border-radius: 10px;
     }
@@ -1654,33 +1654,38 @@
         margin-bottom: 30px;
         width: 100%;
     }
-    .terminos{
+
+    .terminos {
         background-color: #0157b349;
         border-radius: 5px;
         padding: 10px;
         margin: 5px 0px 15px 0px;
-        p{
+
+        p {
             font-size: 70%;
             text-align: justify;
         }
-        span{
+
+        span {
             text-decoration: underline;
         }
     }
-    #programaReunionContainer{
+
+    #programaReunionContainer {
         margin-bottom: 0px;
     }
-    .logoContainer{
+
+    .logoContainer {
         width: 100%;
         margin: 20px 0px 20px 0px;
     }
+
     #logoClienteSolicitud {
         display: flex;
         position: relative;
         justify-content: center;
         align-items: center;
     }
-
 
 }
 
