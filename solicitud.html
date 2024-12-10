@@ -18,6 +18,9 @@
 <body>
     <!-- 13-SOLICITUD CLIENTE -->
     <div id="section13" class="screen13">
+        <div class="logoContainer">
+            <img id="logoClienteSolicitud" class="logoImg" src="img/Copia de Proyecto nuevo.png" alt="">
+        </div>
         <h2>Comencemos!</h2>
         <form class="formCliente" action="">
             <div class="solicitudContainer">
@@ -46,15 +49,22 @@
                     <input class="campo" type="email" name="correo" id="correo" placeholder="Correo">
                     <textarea class="campo" name="mensaje" id="mensaje"
                         placeholder="Cuéntame tu idea detallada y los requisitos que debe cumplir"></textarea>
+                    <textarea class="campo" name="mensaje" id="mensaje"
+                        placeholder="Links de referencia del resultado final al que apuntas"></textarea>
                 </div>
-                <div class="pasosParaCliente">
+                <div id="programaReunionContainer" class="pasosParaCliente">
                     <div class="clientePaso1">
                         <img src="img/number-1_11830766.png" alt="">
                         <h3>Programa la reunion</h3>
                     </div>
                     <textarea class="campo" name="mensaje" id="mensaje"
-                        placeholder="Indícame día y hora, con 2 opciones para ser más flexible"></textarea>
+                        placeholder="Indícame dos opciones de fecha y hora para mayor flexibilidad"></textarea>
                 </div>
+                <div class="terminos">
+                    <p>⚠️ <span>Términos:</span> recuerda incluir todos los requerimientos necesarios que debe cumplir
+                        tu proyecto, ya que toda idea enviada fuera del formulario será presupuestada aparte.</p>
+                </div>
+
                 <div class="checkboxSolicitud">
                     <div class="checkbox-container">
                         <input type="checkbox" id="frecuentes">

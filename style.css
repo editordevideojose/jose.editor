@@ -525,7 +525,7 @@
 
     .antes{
         width: 40%;
-        height: 205px;
+        height: auto;
         border: solid 2px aliceblue;
         border-radius: 10px;
         background-color: #000000;
@@ -533,7 +533,7 @@
 
     .despues{
         width: 60%;
-        height: 310px;
+        height: auto;
         border: solid 2px gold;
         border-radius: 10px;
         background-color: #000000;
@@ -1569,7 +1569,7 @@
 @media all {
     .screen13 {
         width: 100vw;
-        height: 140vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1592,7 +1592,7 @@
         gap: 15px;
         align-items: flex-start;
         color: aliceblue;
-        margin-top: 40px;
+        margin: 40px 0px 60px 0px;
     }
 
     .solicitudContainer {
@@ -1651,9 +1651,37 @@
     }
 
     .checkboxSolicitud {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         width: 100%;
     }
+    .terminos{
+        background-color: #0157b349;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px 0px 15px 0px;
+        p{
+            font-size: 70%;
+            text-align: justify;
+        }
+        span{
+            text-decoration: underline;
+        }
+    }
+    #programaReunionContainer{
+        margin-bottom: 0px;
+    }
+    .logoContainer{
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+    #logoClienteSolicitud {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 
 /*PANTALLA 14: CLIENTE----------------------------------------------------------*/
