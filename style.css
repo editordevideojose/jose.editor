@@ -1821,8 +1821,8 @@
 
 /*PANTALLA 15: PAGO----------------------------------------------------------*/
 @media all {
-    #section14{
-        height: 100vh;
+    #section14 .screen13{
+        height: auto;
     }
     #btnMercado {
         padding: 8px 0px;
