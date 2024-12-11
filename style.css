@@ -488,7 +488,8 @@
     }
 
     .listoParaPublicar {
-        text-decoration: underline solid 3px;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
         text-decoration-color: #9c2bfe;
     }
 
@@ -558,13 +559,15 @@
     }
 
     .esto {
-        text-decoration: underline solid 3px;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
         text-decoration-color: aliceblue;
 
     }
 
     .aEsto {
-        text-decoration: underline solid 3px;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
         text-decoration-color: gold;
 
     }
