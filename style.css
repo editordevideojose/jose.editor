@@ -381,7 +381,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 58%;
+        height: 56%;
         z-index: 0;
         background-color: #000853;
         overflow: hidden;
@@ -441,7 +441,7 @@
     .quienSoy .soyJose {
         font-size: 250%;
         font-weight: 500;
-        margin: 0;
+        margin: 0px 0px 20px 0px;
     }
 
     .quienSoy h3 {
@@ -456,7 +456,7 @@
     }
 
     .contenedorBio {
-        margin: 20px 0px 30px 0px;
+        margin: 25px 0px 30px 0px;
     }
 
     .quienSoy p {
