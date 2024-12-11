@@ -1813,6 +1813,9 @@
 
 /*PANTALLA 15: PAGO----------------------------------------------------------*/
 @media all {
+    #screen13{
+        height: auto;
+    }
     #btnMercado {
         padding: 8px 0px;
     }
@@ -1991,9 +1994,38 @@
         font-size: 60%;
         margin-bottom: 6px;
         padding: 1px 0px;
+    }
+    .pagosExterior{
+        width: 100%;
+        display: flex;
+        margin-bottom: 15px;
+        flex-direction: column;
+        a{
+            width: 50%;
+            height: 90px;
+            button{
+                height: 90px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .pagosExterior1{
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .pagosExterior2{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
 
     }
-
+    #btnPp{
+        width: 70%;
+    }
 }
 
 /*PANTALLA 15: CONSULTA CLIENTE----------------------------------------------------------*/
