@@ -1839,9 +1839,11 @@
         left: 50%;
     }
 
-    #btnPaypalPrex {
+    #btnPaypalPrex, #btnWise, #btnPayoneer {
         background-color: aliceblue;
     }
+
+    
 
     .desdeExterior {
         font-size: 90%;
