@@ -557,13 +557,13 @@
         border-radius: 10px;
     }
 
-    #esto {
+    .esto {
         text-decoration: underline;
         text-decoration-color: aliceblue;
 
     }
 
-    #aEsto {
+    .aEsto {
         text-decoration: underline;
         text-decoration-color: gold;
 
