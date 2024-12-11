@@ -488,8 +488,8 @@
     }
 
     .listoParaPublicar {
-        text-decoration: underline solid 3px;
-        text-decoration-color: #9c2bfe
+        text-decoration: underline solid 3px !important;
+        text-decoration-color: #9c2bfe !important;
     }
 
     .hrCopy {
@@ -564,8 +564,8 @@
     }
 
     #aEsto {
-        text-decoration: underline solid 3px;
-        text-decoration-color: gold;
+        text-decoration: underline solid 3px !important;
+        text-decoration-color: gold !important;
 
     }
 }
