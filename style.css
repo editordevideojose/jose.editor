@@ -356,11 +356,11 @@
         }
 
         h5 {
-            color: aliceblue;
-            filter: drop-shadow(0 0 10px rgb(255, 221, 0));
+            color: rgb(255, 255, 255);
+            filter: drop-shadow(0 0 10px rgb(255, 255, 255));
             font-size: 140%;
-            border: solid 2px aliceblue;
-            border-radius: 5px;
+            /* border: solid 2px rgb(15, 15, 15); */
+            /* border-radius: 5px; */
             width: 90%;
             margin: 0 auto;
             padding: 5px;
@@ -371,8 +371,6 @@
             filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
 
         }
-        
-
     }
 }
 
