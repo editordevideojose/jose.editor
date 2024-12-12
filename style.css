@@ -398,12 +398,6 @@
         -webkit-text-fill-color: transparent;
         animation: pulseGlowInside 2s ease-in-out infinite;
     }
-    
-    
-    
-    
-    
-    
 }
 
 /*PANTALLA 2: QUIEN SOY----------------------------------------------------------------*/
@@ -606,6 +600,9 @@
         text-decoration-thickness: 3px;
         text-decoration-color: gold;
 
+    }
+    div.flecha1{
+        width: 50%;
     }
 }
 
@@ -1250,8 +1247,9 @@
         }
 
         img {
-            width: 40%;
+            width: 60%;
             margin: 0;
+            filter: drop-shadow(0 0 11px rgba(255, 255, 255, 0.5));
         }
 
         h3 {
