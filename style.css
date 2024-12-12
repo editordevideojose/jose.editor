@@ -359,7 +359,11 @@
             color: aliceblue;
             filter: drop-shadow(0 0 10px rgb(255, 221, 0));
             font-size: 140%;
-
+            border: solid 2px aliceblue;
+            border-radius: 5px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 5px;
         }
 
         .h4titulo {
@@ -367,6 +371,8 @@
             filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
 
         }
+        
+
     }
 }
 
