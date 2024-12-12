@@ -394,7 +394,7 @@
             gold
         );
         background-size: 200% 200%;
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: pulseGlowInside 2s ease-in-out infinite;
     }
