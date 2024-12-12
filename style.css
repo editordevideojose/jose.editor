@@ -371,7 +371,39 @@
             filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
 
         }
+        
     }
+    @keyframes pulseGlowInside {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+    
+    .glow {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        color: transparent;
+        background-image: linear-gradient(
+            90deg,
+            gold,
+            rgba(255, 255, 255, 1),
+            gold
+        );
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pulseGlowInside 2s ease-in-out infinite;
+    }
+    
+    
+    
+    
+    
+    
 }
 
 /*PANTALLA 2: QUIEN SOY----------------------------------------------------------------*/
