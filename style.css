@@ -301,7 +301,7 @@
         color: rgb(0, 19, 101);
         position: absolute;
         font-weight: 600;
-        top: 77%;
+        top: 75%;
         left: 50%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
@@ -331,7 +331,7 @@
         color: gold;
         position: absolute;
         font-weight: 500;
-        top: 82%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%);
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
