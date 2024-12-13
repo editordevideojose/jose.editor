@@ -263,6 +263,7 @@
         object-fit: cover;
         display: block;
         filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+
     }
 
     /* .overlay {
@@ -478,11 +479,11 @@
         font-size: 5vw;
         font-weight: 600;
         color: #000083;
-        background-color: rgba(255, 217, 0, 0.874);
-        width: 100vw;
         display: flex;
         justify-content: center;
+        background-color: #020754;
         filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+        width: 100vw;
     }
 
     .contenedorBio {
@@ -533,6 +534,36 @@
         border-radius: 5px;
         background: linear-gradient(to right, transparent, black, transparent);
     }
+    @keyframes pulseGlowInside {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+    
+    .glow-container {
+        display: inline-block;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        background-image: linear-gradient(90deg, gold, rgba(255, 255, 255, 1), gold);
+        background-size: 200% 200%;
+        animation: pulseGlowInside 2s ease-in-out infinite;
+        padding: 0.2em 0.5em; /* Espaciado del texto */
+        border-radius: 10px; /* Opcional: para suavizar los bordes */
+    }
+    
+    .glow-container h3 {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0; /* Elimina el margen por defecto del h3 */
+    }
+    
 }
 
 /*PANTALLA 2BIS: TRANSFORMA TU CONTENIDO----------------------------------------------------------------*/
