@@ -1945,8 +1945,6 @@
         background-color: aliceblue;
     }
 
-
-
     .desdeExterior {
         font-size: 90%;
         text-align: center;
@@ -2144,6 +2142,7 @@
     #btnPp {
         width: 70%;
     }
+  
 }
 
 /*PANTALLA 15: CONSULTA CLIENTE----------------------------------------------------------*/
